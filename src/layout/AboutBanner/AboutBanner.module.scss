@@ -1,0 +1,85 @@
+@import 'styles/variables';
+
+.banner {
+  padding-top: 75px;
+  padding-bottom: 55px;
+  color: #fff;
+  letter-spacing: 0.87px;
+  overflow: hidden;
+
+  .content {
+    position: relative;
+    width: 50%;
+    min-height: 320px;
+  }
+
+  .heading {
+    line-height: 42px;
+    margin-bottom: 35px;
+  }
+
+  .subText {
+    margin-bottom: 55px;
+  }
+
+  .imgWrap {
+    position: absolute;
+    margin-top: -35px;
+    top: 50%;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 480px;
+    transform: translate(100%, -50%);
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .footer {
+    padding-bottom: 30px;
+    .icon {
+      display: block;
+      width: 35px;
+      height: 24px;
+      margin-bottom: 7px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 15px;
+    .content {
+      width: 100%;
+      text-align: center;
+    }
+    .imgWrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin-top: 0;
+      margin-bottom: 30px;
+      img {
+        width: 440px;
+      }
+    }
+    .heading {
+      margin-bottom: 30px;
+    }
+    .subText {
+      margin-bottom: 35px;
+    }
+    .footer {
+      padding-bottom: 0;
+      .icon {
+        margin: 0 auto 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import 'styles/variables';
+
+.component {
+  padding: 55px 0 70px;
+  @media screen and (max-width: $laptop) {
+    padding: 35px 0 40px;
+    text-align: center;
+  }
+}

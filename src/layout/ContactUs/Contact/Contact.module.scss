@@ -1,0 +1,40 @@
+@import 'styles/variables';
+
+.component {
+  margin-bottom: 32px;
+
+  .title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0;
+    color: rgba(27, 33, 37, 0.5);
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    color: #000;
+
+    svg > path {
+      fill: rgba(0, 0, 0, 0.24);
+    }
+  }
+
+  .mt {
+    margin-top: 10px;
+  }
+
+  .darkIcon {
+    svg > path {
+      fill: rgb(0, 0, 0);
+    }
+  }
+
+  .copyable {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,50 @@
+@import 'styles/variables';
+
+.inputContainer {
+  background: #ffffff;
+  border: 1px solid var(--popupIconColor);
+  box-shadow: 0px 2px 16px rgba(0, 57, 166, 0.08);
+  border-radius: 12px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media all and (max-width: $mobileL) {
+    margin-bottom: 12px;
+  }
+}
+
+.input {
+  border: 0;
+  width: 100%;
+  padding: 10px 20px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.error {
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+  color: #f32249;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.adaptiveDesktop {
+  display: flex;
+
+  @media all and (max-width: $mobileL) {
+    display: none;
+  }
+}
+
+.adaptiveMobile {
+  @media all and (min-width: $mobileL) {
+    display: none;
+  }
+}

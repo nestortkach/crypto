@@ -1,0 +1,193 @@
+@import 'styles/variables';
+.container {
+  max-width: 1290px;
+  width: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin: 0 auto;
+  @media screen and (max-width: $laptop) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.trustpilotSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 133px;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: $laptop) {
+    padding-top: 550px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 74px;
+    padding-bottom: 40px;
+  }
+}
+
+.trustpilotContaienr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .comentsContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      margin-bottom: 28px;
+      margin-top: 20px;
+    }
+    .leftArrowDesktop,
+    .rightArrowDesktop {
+      width: 48px;
+    }
+    .carouselContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+      }
+      .carouselItem {
+        display: flex;
+        width: 320px;
+        flex-direction: column;
+        justify-content: baseline;
+        padding: 24px;
+        border-radius: 32px;
+        margin: 12px;
+        min-height: 262px;
+        font-weight: 400;
+        font-size: 17px;
+
+        h3 {
+          font-weight: 700;
+          font-size: 18px;
+          color: #01268a;
+          margin-bottom: 17.66px;
+        }
+
+        p {
+          font-size: 17px;
+          line-height: 1.3rem;
+        }
+
+        color: rgba(0, 0, 0, 0.5);
+        background: linear-gradient(252.44deg, #f3f9ff 0%, #f3f9ff 100%);
+        @media screen and (max-width: $tablet) {
+          margin: 10px;
+          max-width: 100%;
+        }
+        .starsContainer {
+          margin-bottom: 17.66px;
+        }
+      }
+    }
+  }
+}
+
+.location {
+  margin-top: 17.33px;
+  display: flex;
+  align-items: center;
+  gap: 6.67px;
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    opacity: 50%;
+  }
+}
+
+.trustpilotLink {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  padding: 16px 0;
+  width: 31%;
+  margin-top: 40px;
+  background: #00ebb2;
+  box-shadow: 0px 2px 16px rgba(0, 57, 166, 0.08);
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 2px 24px rgba(0, 57, 166, 0.18);
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 0px;
+  }
+}
+
+.trustpilotLinkText {
+  background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.heading {
+  line-height: 47px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 56px;
+  font-weight: 700;
+  color: #01268a;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 37.5px;
+  }
+}
+
+.carousel_arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+  gap: 34px;
+}
+
+.starsContainer {
+  display: flex;
+  gap: 7px;
+}
+
+.dots {
+  margin-top: 32px;
+  li {
+    button {
+      &::before {
+        background-color: white !important;
+        width: 8px !important;
+        height: 8px !important;
+      }
+    }
+
+    // .BrainhubCarousel__dot::before {
+    // background: red !important !important;
+    // width: 8px;
+    // height: 8px;
+    // }
+  }
+}

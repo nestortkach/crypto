@@ -1,0 +1,89 @@
+@import 'styles/variables';
+
+.mainSection {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 85px;
+  padding-bottom: 75px;
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+.imgBox {
+  flex-basis: 600px;
+  flex-shrink: 1;
+
+  @media screen and (max-width: $tablet) {
+    flex-basis: auto;
+  }
+}
+
+.productImg {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  min-width: 280px;
+
+  @media screen and (max-width: $tablet) {
+    max-width: 500px;
+  }
+}
+
+.productDescColumn {
+  display: flex;
+  flex-direction: column;
+  max-width: 356px;
+  flex-shrink: 1;
+  margin-right: 30px;
+
+  @media screen and (max-width: $tablet) {
+    margin: 0 auto;
+  }
+}
+
+.productDesc {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 43px;
+  color: $white;
+  margin-bottom: 59px;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.productLead {
+  font-size: 18px;
+  line-height: 27px;
+  color: $white;
+  margin-bottom: 71px;
+  font-weight: normal;
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 62px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.questionBtn {
+  margin-right: 10px;
+
+  @media screen and (max-width: $tablet) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

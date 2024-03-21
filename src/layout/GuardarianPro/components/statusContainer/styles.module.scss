@@ -1,0 +1,23 @@
+.active {
+  padding: 4px;
+  color: #00998a;
+  border-radius: 5px;
+  width: fit-content;
+  background: rgba(48, 208, 192, 0.1);
+}
+
+.paused {
+  padding: 4px;
+  color: #a9a9a9;
+  border-radius: 5px;
+  width: fit-content;
+  background: rgba(243, 34, 73, 0.04);
+}
+
+.failed {
+  padding: 4px;
+  color: #f32249;
+  border-radius: 5px;
+  width: fit-content;
+  background: rgba(243, 34, 73, 0.04);
+}

@@ -1,0 +1,1 @@
+export { BuyCurrencyFaq } from './BuyCurrencyFaq';

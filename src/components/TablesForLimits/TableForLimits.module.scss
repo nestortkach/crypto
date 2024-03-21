@@ -1,0 +1,21 @@
+.fiatCryptoTable,
+.cryptoFiat {
+  border: 1px solid black;
+  border-collapse: collapse;
+  tr {
+    text-align: center;
+  }
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  width: 100%;
+  .tableHead {
+    height: 40px;
+  }
+}
+.cryptoFiat {
+  margin-top: 40px;
+}

@@ -1,0 +1,1 @@
+export { HowToBuyBTCSection } from './HowToBuyBTCSection';

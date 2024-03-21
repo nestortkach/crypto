@@ -1,0 +1,1 @@
+export { NewCoinsToCardSection } from './NewCoinsToCardSection';

@@ -1,0 +1,39 @@
+@import 'styles/variables';
+
+.servicesSection {
+  padding-top: 100px;
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 60px;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  margin-bottom: 44px;
+}
+
+.servicesRow {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 24px;
+  @media screen and (max-width: 1160px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+
+.carousel {
+  display: none;
+
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
+}

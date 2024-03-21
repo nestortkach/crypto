@@ -1,0 +1,97 @@
+@import 'styles/variables';
+
+.component {
+  padding: 56px 0 111px;
+  position: relative;
+
+  @media screen and (max-width: $tablet) {
+    padding: 64px 0;
+  }
+
+  @media screen and (max-width: 1130px) {
+    padding: 64px 0;
+  }
+
+  .title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0;
+    margin-top: 24px;
+    color: #01268a;
+    width: 341px;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 8px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    @media screen and (max-width: 1130px) {
+      width: 100%;
+    }
+  }
+
+  .cardFlex {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .card {
+    border-radius: 24px;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+
+    @media screen and (max-width: $tablet) {
+      padding: 0;
+      display: flex;
+      text-align: start;
+    }
+
+    .cardWrapper {
+      @media screen and (max-width: $tablet) {
+        margin-left: 12px;
+      }
+    }
+
+    .image {
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0px 6px 24px 0px rgba(1, 48, 154, 0.1);
+
+      @media screen and (max-width: $tablet) {
+        width: 100px;
+        padding: 16px;
+      }
+    }
+  }
+
+  .subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 12px;
+    }
+  }
+
+  .buyButton {
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    margin: 32px auto 0;
+    background-color: #03b481;
+  }
+}

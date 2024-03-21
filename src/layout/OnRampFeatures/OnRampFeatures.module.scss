@@ -1,0 +1,367 @@
+@import 'styles/variables';
+
+.section {
+  @media screen and (max-width: $laptop) {
+    display: block;
+    padding-block: 64px;
+    padding-bottom: 40px;
+  }
+}
+
+.container {
+  h2 {
+    text-align: center;
+    margin-bottom: 88px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0;
+    color: #01268a;
+
+    @media screen and (max-width: $tablet) {
+      text-align: start;
+      font-size: 32px;
+      line-height: 1.2;
+      margin-bottom: 56px;
+      font-weight: 700;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+    @media screen and (max-width: 1110px) {
+      gap: 70px;
+      align-items: flex-start;
+    }
+  }
+  .paymentsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 63px;
+    @media screen and (max-width: 1110px) {
+      flex-direction: column;
+      align-items: start;
+      gap: 23px;
+    }
+  }
+  .paymentsWrapperReverse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 63px;
+    @media screen and (max-width: 1110px) {
+      flex-direction: column-reverse;
+      gap: 23px;
+    }
+    @media screen and (max-width: $tablet) {
+      align-items: start;
+    }
+  }
+
+  .optionWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 121px;
+  }
+
+  .payments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 505px;
+      border-radius: 10px;
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+        max-width: 395px;
+      }
+    }
+  }
+
+  .card {
+    background-color: #f3f9ff;
+    height: 275px;
+    width: 436px;
+    padding: 34px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    @media screen and (max-width: $tablet) {
+      font-size: 14px;
+      width: 100%;
+      max-width: 395px;
+      height: 220px;
+      gap: 23px;
+      padding: 22px;
+    }
+    .imgarr1 {
+      @media screen and (max-width: $tablet) {
+        height: 65%;
+      }
+      @media screen and (max-width: $mobileL) {
+        height: 55%;
+      }
+    }
+    .imgarr2 {
+      @media screen and (max-width: $tablet) {
+        height: 85%;
+      }
+      @media screen and (max-width: $mobileL) {
+        height: 75%;
+      }
+    }
+    .imgarr3 {
+      @media screen and (max-width: $tablet) {
+        height: 80%;
+      }
+      @media screen and (max-width: $mobileL) {
+        height: 70%;
+      }
+    }
+  }
+
+  .optionSubtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00000080;
+    width: 526px;
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+  .paymentsDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .paymentTitle {
+      font-weight: 300;
+      font-size: 38px;
+      line-height: 53px;
+      color: #01268a;
+      margin: 0 0 5px;
+      @media screen and (max-width: $tablet) {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+    }
+
+    .paymentSubtitle {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #00000080;
+      width: 526px;
+      @media screen and (max-width: $tablet) {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+  }
+  .firstWrapper {
+    display: flex;
+    align-items: center;
+    gap: 77px;
+    @media screen and (max-width: $tablet) {
+      gap: 54px;
+    }
+    @media screen and (max-width: $mobileL) {
+      gap: 40px;
+    }
+  }
+  .secondWrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 98px;
+    @media screen and (max-width: $tablet) {
+      gap: 73px;
+    }
+    @media screen and (max-width: $mobileL) {
+      gap: 60px;
+    }
+  }
+  .thirdWrapper {
+    align-items: center;
+    display: flex;
+    gap: 68px;
+    @media screen and (max-width: $tablet) {
+      gap: 45px;
+    }
+    @media screen and (max-width: $mobileL) {
+      gap: 32px;
+    }
+  }
+  .apiSection {
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%), 0 10px 15px rgb(0 0 0 / 20%);
+    img {
+      height: 321.65px;
+      width: 100%;
+      max-width: 395px;
+      border-top-right-radius: 32px;
+      border-top-left-radius: 32px;
+      object-fit: cover;
+    }
+    position: relative;
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      max-width: 395px;
+      overflow: hidden;
+      img {
+        height: 321.65px;
+        width: 100%;
+        max-width: 395px;
+        object-fit: cover;
+      }
+    }
+  }
+  .readApiButton {
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+
+    button {
+      background-color: #00ebb2;
+      width: 100%;
+      box-shadow: 0 2px 16px 0 #0039a614;
+      color: white;
+      padding: 18px 0px;
+      font-weight: 700;
+      font-size: 18px;
+      border-bottom-left-radius: 32px;
+      border-bottom-right-radius: 32px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0px 2px 24px rgba(0, 57, 166, 0.18);
+        transform: scale(1.05);
+      }
+
+      span {
+        background: linear-gradient(90deg, #0042b8 -50%, #000756 158.95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+    @media screen and (max-width: $tablet) {
+      display: flex;
+      justify-content: center;
+
+      button {
+        background-color: #00ebb2;
+        width: 100%;
+        box-shadow: 0 2px 16px 0 #0039a614;
+        color: white;
+        padding: 18px 0px;
+        font-weight: 700;
+        font-size: 18px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          box-shadow: 0px 2px 24px rgba(0, 57, 166, 0.18);
+          transform: scale(1.05);
+        }
+
+        span {
+          background: linear-gradient(90deg, #0042b8 -50%, #000756 158.95%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      }
+    }
+  }
+}
+
+.partnersButtons {
+  margin-top: 21px;
+  @media screen and (max-width: $tablet) {
+    margin-top: 24px;
+  }
+}
+
+.navBtns {
+  display: flex;
+  padding: 4px;
+  background: rgba(1, 38, 138, 0.06);
+  border-radius: 8px;
+}
+
+.navBtn {
+  width: 50%;
+  min-width: 90px;
+  height: 34px;
+  text-align: center;
+  padding: 0;
+  color: black;
+}
+
+.integrateButton {
+  display: flex;
+  justify-content: center;
+}
+
+.actionButton {
+  margin-top: 56px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  padding: 16px 0;
+  width: 352px;
+  background: #00ebb2;
+  box-shadow: 0px 2px 16px rgb(0 57 166 / 8%);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+
+  span {
+    background: #212121;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-fill-color: transparent;
+  }
+
+  &:hover {
+    box-shadow: 0px 2px 24px rgb(0 57 166 / 18%);
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    border: 1px solid rgba(0, 135, 78, 1);
+  }
+
+  @media (max-width: $laptop) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin-top: 24px;
+  }
+}

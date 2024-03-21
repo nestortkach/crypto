@@ -1,0 +1,167 @@
+@import 'styles/variables';
+
+.howToBuySection {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 0;
+  .container {
+    padding: 24px 0;
+  }
+  @media screen and (max-width: $tablet) {
+    padding-top: 10px;
+  }
+}
+
+.heading {
+  color: #000;
+  text-align: center;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 20px;
+    font-size: 26px !important;
+  }
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.top_image_container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.linkedin {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.partner {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 35px 61px 0 #01309a1a;
+  width: 417px;
+  height: 530px;
+  position: relative;
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+
+    &_image {
+      margin: 0 auto;
+    }
+
+    &_title {
+      text-align: center;
+    }
+
+    &_desc {
+      color: #00000080;
+      text-align: center;
+    }
+  }
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 24px 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    &_title {
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin: 0 24px;
+    height: 560px;
+    .top {
+      padding: 10px;
+      &_desc {
+        text-align: center;
+      }
+    }
+  }
+}
+.carousel {
+  .arrowLeft,
+  .arrowRight {
+    display: none;
+  }
+  > div {
+    > div {
+      > div {
+        > ul {
+          height: 630px;
+        }
+      }
+    }
+  }
+
+  &_dots {
+    display: none;
+  }
+
+  @media screen and (max-width: $tablet) {
+    .arrowLeft,
+    .arrowRight {
+      display: block;
+    }
+    &_dots {
+      padding-left: 20px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    > div {
+      > div {
+        > div {
+          > ul {
+            height: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dots {
+  margin-top: 32px;
+  @media screen and (max-width: $tablet) {
+    margin-top: 0;
+  }
+
+  li {
+    button {
+      &::before {
+        background-color: #0042b8 !important;
+        width: 8px !important;
+        height: 8px !important;
+      }
+    }
+  }
+}
+.buttonContainer {
+  margin: 0 16px;
+}
+
+.button {
+  color: white;
+  background-color: #04c697;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}

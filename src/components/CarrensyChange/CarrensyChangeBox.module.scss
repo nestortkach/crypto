@@ -1,0 +1,178 @@
+@import 'styles/variables';
+.component {
+  margin-top: 28px;
+  padding-bottom: 24px;
+  padding: 16px 0 88px;
+
+  .title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #01268a;
+  }
+  .subTitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #1b2125;
+  }
+}
+
+.textContent {
+  text-align: left;
+  margin: 10px 10px 14px 10px;
+  h3,
+  h4,
+  h5 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #01268a;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #7888b2;
+    margin-top: 24px;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 12px;
+  }
+}
+
+.imageContainer {
+  text-align: center;
+
+  img {
+    width: 326px;
+    height: auto;
+    @media screen and (max-width: $tablet) {
+      width: 178px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+}
+
+.buyButton {
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background: #04c697;
+  border-radius: 8px;
+  @media screen and (max-width: 1090px) {
+    width: 100%;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+}
+
+.boxContainers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  align-items: stretch;
+
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 100%;
+  }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 21px;
+  width: 100%;
+  background: #f3f9ff;
+  border-radius: 12px;
+  margin: 12px 0;
+  cursor: pointer;
+
+  p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 181px;
+    height: 16px;
+    color: #7888b2;
+  }
+  @media screen and (max-width: 1090px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  @media screen and (max-width: $laptop) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0%;
+  }
+}
+.imgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  .imgCurrency {
+    max-width: 37px;
+  }
+  .imgLogo {
+    max-width: 37px;
+  }
+  .imgVector {
+    max-width: 11px;
+  }
+  @media screen and (max-width: 1090px) {
+    margin-bottom: 12px;
+  }
+}
+.rateText {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 175px;
+
+  h3 {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 1090px) {
+    margin-bottom: 12px;
+  }
+}

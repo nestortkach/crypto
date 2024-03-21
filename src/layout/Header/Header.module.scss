@@ -1,0 +1,412 @@
+@import '../../styles/variables.scss';
+
+.backgroundBox {
+  background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  // background: white;
+  padding-bottom: 1px;
+}
+
+.blue {
+  background: #0ccbff;
+}
+
+.lightblue {
+  background: linear-gradient(180deg, #37bde2 0%, #2b9ab9 100%);
+
+  @media screen and (max-width: $tablet) {
+    background: linear-gradient(252.44deg, #37bde2 0%, #2b9ab9 100%);
+  }
+}
+
+.none {
+  background: white;
+}
+
+.kishu {
+  background: #00c5ff;
+}
+.tron {
+  background: linear-gradient(252.44deg, #323232 0%, #ff060a 100%);
+}
+
+.shiba {
+  background: linear-gradient(252.44deg, #ffa409 0%, #1e1e29 49.6%);
+}
+
+.monero {
+  background: linear-gradient(252.44deg, #4d4d4d 0%, #f26822 100%);
+}
+
+.world {
+  background: linear-gradient(252.44deg, #6566ff 0%, #6cc1ff 100%);
+}
+
+.doge {
+  background: linear-gradient(252.44deg, #f1eadc 0%, #c5ac69 100%);
+}
+
+.cardano {
+  background: linear-gradient(252.44deg, #2c50ab 0%, #1a3f97 100%);
+}
+.usdc {
+  background: linear-gradient(252.44deg, #2775ca 0%, #003b7c 100%);
+}
+.thether {
+  background: linear-gradient(252.44deg, #50af95 0%, #219273 100%);
+}
+
+.stellar {
+  background: linear-gradient(252.44deg, #0a001c 0%, #0b0331 100%);
+}
+
+.ripple {
+  background: linear-gradient(252.44deg, #161a1e 0%, #0091f2 100%);
+}
+
+.ethereum {
+  background: linear-gradient(252.44deg, #8c8c8c 0%, #141414 100%);
+}
+
+.tether {
+  background: linear-gradient(252.44deg, #50af95 0%, #219273 100%);
+}
+
+.pancake {
+  background: linear-gradient(252.44deg, #633001 0%, #d1884f 100%);
+}
+.bat {
+  background: linear-gradient(252.44deg, #2b32a1 0%, #4048aa 100%);
+}
+.polkadot {
+  background: linear-gradient(252.44deg, #1e1e1e 0%, #b70262 100%);
+}
+.raven {
+  background: linear-gradient(252.44deg, #384182 0%, #384182 100%);
+}
+.uniswap {
+  background: linear-gradient(252.44deg, #c700e5 0%, #f90094 100%);
+}
+.chainlink {
+  background: linear-gradient(252.44deg, #2a5ada 0%, #002da6 100%);
+}
+.solana {
+  background: linear-gradient(252.44deg, #ca32f8 0%, #1be5ae 100%);
+}
+.share {
+  background: linear-gradient(252.44deg, #238cfd 0%, #0052ab 100%);
+}
+.dash {
+  background: linear-gradient(252.44deg, #008de4 0%, #063d74 100%);
+}
+.ontology {
+  background: linear-gradient(252.44deg, #23a4bc 0%, #007186 100%);
+}
+.horizen {
+  background: linear-gradient(252.44deg, #16203a 0%, #0cb0e5 100%);
+}
+.nem {
+  background: linear-gradient(252.44deg, #008de4 0%, #00c4b3 100%);
+}
+.symbolToken {
+  background: linear-gradient(252.44deg, #3c0044 0%, #4703b8 100%);
+}
+.sushi {
+  background: linear-gradient(252.44deg, #0e0f23 0%, #fa52a0 100%);
+}
+.cryptoCom {
+  background: linear-gradient(252.44deg, #06121e 0%, #063d74 100%);
+}
+.harvestFinance {
+  background: linear-gradient(252.44deg, #b0dfde 0%, #268785 100%);
+}
+.dfiMoney {
+  background: linear-gradient(252.44deg, #f90067 0%, #001d3e 100%);
+}
+.daoMaker {
+  background: linear-gradient(252.44deg, #4190ff 0%, #48ceff 100%);
+}
+.hogeFinance {
+  background: linear-gradient(252.44deg, #1b1b1a 0%, #6f6f6f 100%);
+}
+.nowToken {
+  background: linear-gradient(252.44deg, #262630 0%, #00ef76 100%);
+}
+.aave {
+  background: linear-gradient(252.44deg, #b5519f 0%, #32b8c5 100%);
+}
+.kusama {
+  background: linear-gradient(252.44deg, #000 0%, #515151 100%);
+}
+.chiliz {
+  background: linear-gradient(252.44deg, #cd0124 0%, #42000b 100%);
+}
+.wax {
+  background: linear-gradient(252.44deg, #f89022 0%, #ab5800 100%);
+}
+.theta {
+  background: linear-gradient(252.44deg, #1b1f2b 0%, #29c6d6 100%);
+}
+.filecoin {
+  background: linear-gradient(252.44deg, #0090ff 0%, #005699 100%);
+}
+.nano {
+  background: linear-gradient(252.44deg, #4a90e2 0%, #0c56ad 100%);
+}
+.bitcoin {
+  background: linear-gradient(252.44deg, #f7931a 0%, #c55627 100%);
+}
+.klever {
+  background: linear-gradient(252.44deg, #f8468a 0%, #9b44f6 100%);
+}
+.bitcoinCash {
+  background: linear-gradient(252.44deg, #8dc351 0%, #3f6713 100%);
+}
+.harmony {
+  background: linear-gradient(252.44deg, #06b3e7 0%, #0bbc81 100%);
+}
+.ark {
+  background: linear-gradient(252.44deg, #f70000 0%, #560000 100%);
+}
+.icon {
+  background: linear-gradient(252.44deg, #18a0b1 0%, #24575e 100%);
+}
+.zilliqa {
+  background: linear-gradient(252.44deg, #18a0b1 0%, #24575e 100%);
+}
+.algorand {
+  background: linear-gradient(252.44deg, #000 0%, #696969 100%);
+}
+.keanuInu {
+  background: linear-gradient(252.44deg, #ce7be7 0%, #049cd3 100%);
+}
+.bluezelle {
+  background: linear-gradient(252.44deg, #18578c 0%, #5da9dd 100%);
+}
+.bread {
+  background: linear-gradient(252.44deg, #fe558d 0%, #f99f3e 100%);
+}
+.floki {
+  background: linear-gradient(95.15deg, rgba(255, 122, 0, 0.8) -0.15%, rgba(247, 147, 33, 0.8) 100%);
+}
+.sand {
+  background: linear-gradient(95.15deg, rgba(9, 198, 249, 0.8) -0.15%, rgba(4, 93, 233, 0.8) 100%);
+}
+.avax {
+  background: linear-gradient(95.15deg, rgba(255, 0, 0, 0.7) -0.15%, rgba(153, 0, 0, 0.7) 100%);
+}
+.axs {
+  background: linear-gradient(95.15deg, rgba(41, 83, 155, 0.9) -0.15%, rgba(30, 59, 112, 0.9) 100%);
+}
+.rainbow {
+  background: linear-gradient(
+    94.86deg,
+    rgba(245, 22, 24, 0.8) 0.68%,
+    rgba(255, 131, 0, 0.8) 18.78%,
+    rgba(255, 227, 51, 0.8) 34.3%,
+    rgba(12, 182, 12, 0.8) 47.23%,
+    rgba(4, 155, 255, 0.8) 65.34%,
+    rgba(0, 100, 255, 0.8) 83.45%,
+    rgba(162, 17, 231, 0.8) 100%
+  );
+}
+.feg {
+  background: linear-gradient(95.15deg, rgba(206, 63, 88, 0.8) -0.15%, rgba(49, 113, 247, 0.8) 100%);
+}
+.hex {
+  background: linear-gradient(
+    95.15deg,
+    rgba(241, 179, 24, 0.8) -0.15%,
+    rgba(221, 68, 98, 0.8) 52.01%,
+    rgba(234, 26, 172, 0.8) 100%
+  );
+}
+.sanshu {
+  background: linear-gradient(101.62deg, #ff7bac 0%, #e34989 100%);
+}
+.koromaru {
+  background: linear-gradient(101.62deg, #7c797c 0%, #90877e 100%);
+}
+.awc {
+  background: linear-gradient(101.62deg, #212d4d 0%, #2699fb 100%);
+}
+.ach {
+  background: #020041;
+}
+.aergo {
+  background: linear-gradient(101.62deg, #1c2951 0%, #e6007d 100%);
+}
+.elf {
+  background: linear-gradient(101.62deg, #2b5ebb 0%, #143f8e 100%);
+}
+.mph {
+  background: linear-gradient(101.62deg, #3934f1 0%, #df06a9 100%);
+}
+
+.zrx {
+  background: linear-gradient(95.15deg, rgba(48, 44, 44, 0.8) -0.15%, rgba(24, 24, 24, 0.8) 100%);
+}
+
+.dlt {
+  background: linear-gradient(101.62deg, #322a3f 0%, #f4ae95 100%);
+}
+
+.klee {
+  background: linear-gradient(101.62deg, #9894f8 0%, #afd2fb 100%);
+}
+
+.one {
+  background: linear-gradient(252.44deg, #06b3e7 0%, #0bbc81 100%);
+}
+
+.mint {
+  background: linear-gradient(101.62deg, #137136 0%, #59ff97 100%);
+}
+
+.near {
+  background: linear-gradient(96.51deg, #e3935b 5.11%, #ffc860 98.94%);
+}
+.ggtkn {
+  background: linear-gradient(252.44deg, #003b7c 0%, #30cffd 100%);
+}
+
+.atom {
+  background: linear-gradient(252.44deg, #1b1e36 0%, #6f7390 100%);
+}
+
+.vra {
+  background: linear-gradient(252.44deg, #ed0a4b 0%, #000000 100%);
+}
+
+.iota {
+  background: linear-gradient(252.44deg, #4b437e 0%, #000000 100%);
+}
+
+.fet {
+  background: linear-gradient(72.99deg, #171A1F 0%, #1D365C 98.97%);
+}
+
+.op {
+  background: linear-gradient(252.44deg, #FF0420 0%, #301F1B 100%);
+}
+
+.sxp {
+  background: linear-gradient(252.44deg, #F64A28 0%, #3A0B00 100%);
+}
+
+.cfx {
+  background: linear-gradient(252.44deg, #295bb4 0%, #07855b 100%);
+}
+
+.jasmy {
+  background: linear-gradient(252.44deg, #593000 0%, #f65f1e 100%);
+}
+.inj {
+  background: linear-gradient(252.44deg, #0067c4 0%, #008db6 100%);
+}
+.arb {
+  background: linear-gradient(252.44deg, #28a0f0 0%, #000000 100%);
+}
+.pepe {
+  background: linear-gradient(252.44deg, #005e1a 0%, #178320 65.63%);
+}
+.gala {
+  background: linear-gradient(252.44deg, rgba(38, 38, 42, 0.82) 0%, #26262a 100%);
+}
+.babydoge {
+  background: linear-gradient(252.44deg, #fda624 0%, #301f1b 100%);
+}
+.iotx {
+  background: linear-gradient(252.44deg, #110f1b 0%, #403a62 100%);
+}
+.ocean {
+  background: linear-gradient(252.44deg, #ab357f 0%, #58003c 100%);
+}
+.ton {
+  background: linear-gradient(252.44deg, #0076b0 0%, #004b71 100%);
+}
+.raca {
+  background: linear-gradient(252.44deg, #100c04 0%, #fcc33c 100%);
+}
+.tipsy {
+  background: linear-gradient(252.44deg, #35268d 0%, #837bb3 100%);
+}
+.kdoe {
+  background: linear-gradient(252.44deg, #884ff0 0%, #2f0084 100%);
+}
+.brg {
+  background: linear-gradient(252.44deg, #21203f 56.25%, #ffbb00 100%);
+}
+
+.matic {
+  background: linear-gradient(252.44deg, #8247e5 0%, #210155 100%);
+}
+
+.ltc {
+  background: linear-gradient(252.44deg, #345d9d 0%, #022a69 100%);
+}
+
+.bitgert {
+  background: linear-gradient(101.62deg, #13d6b8 0%, #8109ea 100%);
+}
+
+.nyxToken {
+  background: linear-gradient(101.62deg, #3d0a49 0%, #8109ea 100%);
+}
+
+.voltInu {
+  background: linear-gradient(101.62deg, #333232 0%, #88a701 100%);
+}
+.egld {
+  background: linear-gradient(252.44deg, #0d022b 0%, #002155 100%);
+}
+.header {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media screen and (max-width: $mobileL) {
+    padding: 20px 0;
+  }
+
+  .headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 48px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      padding: 0 16px;
+    }
+  }
+}
+
+.integrateUsHeader {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media screen and (max-width: $mobileL) {
+    padding: 20px 0;
+  }
+
+  .headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 48px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      padding: 0 16px;
+    }
+  }
+}

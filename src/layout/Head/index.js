@@ -1,0 +1,1 @@
+export { DocHead } from './Head';

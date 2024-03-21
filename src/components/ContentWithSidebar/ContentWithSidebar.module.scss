@@ -1,0 +1,41 @@
+@import 'styles/variables';
+
+.component {
+  padding-top: 48px;
+  padding-bottom: 150px;
+  background: $light-gray;
+
+  .layout {
+    display: flex;
+  }
+
+  .sidebar {
+    width: 284px;
+    padding: 24px;
+    flex-shrink: 0;
+  }
+
+  .content {
+    padding: 24px 24px 32px;
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 72px;
+
+    .layout {
+      flex-wrap: wrap;
+    }
+
+    .sidebar {
+      width: 100%;
+      li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

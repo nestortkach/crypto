@@ -1,0 +1,1 @@
+export { ProSettings } from './ProSettings';

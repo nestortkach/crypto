@@ -1,0 +1,162 @@
+@import 'styles/variables';
+
+.section {
+  background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  padding: 100px 0;
+  .title {
+    color: white;
+    text-align: center;
+  }
+  .subtitle {
+    margin-top: 24px;
+    color: white;
+    text-align: center;
+  }
+  .cards {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .card {
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.14);
+      padding: 15px 48px;
+      display: flex;
+      justify-content: space-between;
+      &_img {
+        width: 244px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        &_title {
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 38px;
+          letter-spacing: 0;
+          text-align: left;
+          color: white;
+        }
+        &_subtitle {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0;
+          text-align: left;
+          color: white;
+        }
+        &_button {
+          border: none;
+          background: transparent;
+          color: #5583ff;
+          text-align: left;
+          cursor: pointer;
+          width: max-content;
+          display: flex;
+          padding-left: 0;
+          align-items: center;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  .button {
+    height: 50px;
+    background-color: #04c697 !important;
+    color: white;
+    max-width: 207px;
+    margin: 44px auto 0;
+    cursor: pointer;
+    &_container {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+  }
+  .dots {
+    li {
+      button {
+        &::before {
+          background-color: white !important;
+          width: 8px !important;
+          height: 8px !important;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $tablet) {
+    padding: 48px 0;
+    .title {
+      font-size: 26px !important;
+    }
+    .subtitle {
+      margin-top: 12px;
+    }
+    .cards {
+      margin-top: 24px;
+      flex-direction: column;
+      gap: 12px;
+      .card {
+        height: 100%;
+        border-radius: 24px;
+        padding: 24px;
+        flex-direction: column-reverse;
+        &_img {
+          align-self: center;
+          margin-bottom: 16px;
+        }
+        &_content {
+          &_title {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: 0;
+            text-align: center;
+            color: white;
+          }
+          &_subtitle {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0;
+            text-align: center;
+            color: white;
+          }
+          &_button {
+            border: none;
+            background: transparent;
+            color: #5583ff;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0;
+            text-align: left;
+            cursor: pointer;
+            width: max-content;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .button {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 24px;
+    }
+  }
+}

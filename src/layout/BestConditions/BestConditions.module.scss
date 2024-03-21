@@ -1,0 +1,98 @@
+@import 'styles/variables';
+
+.component {
+  padding: 16px 0 88px;
+  position: relative;
+  counter-reset: listItem;
+  @media screen and (max-width: $mobileL) {
+    padding-bottom: 64px;
+  }
+  .maintitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0;
+    color: #01268a;
+
+    @media screen and (max-width: $tablet) {
+      font-weight: 700;
+      text-align: start;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+    @media screen and (max-width: $mobileL) {
+      font-weight: 700;
+    }
+  }
+
+  .features {
+    display: flex;
+    background: white;
+    padding: 32px;
+    justify-content: space-between;
+    border-radius: 32px;
+    border: 1px solid #ffffff33;
+    box-shadow: 0px 6px 24px 0px #01309a1a;
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  .feature {
+    text-align: center;
+    @media screen and (min-width: $laptop) {
+      width: 139px;
+    }
+
+    .points {
+      font-weight: 700;
+      font-size: 40px;
+      color: #5583ff;
+      margin-bottom: 0;
+    }
+
+    .title,
+    .subtitle {
+      font-weight: 400;
+      font-size: 16px;
+      color: #000;
+      opacity: 50%;
+      line-height: 24px;
+      margin-top: 12px;
+    }
+
+    .subtitle {
+      margin: 0;
+    }
+
+    @media screen and (max-width: $tablet) {
+      .title,
+      .subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+      }
+    }
+  }
+
+  .salesButton {
+    width: 100%;
+    max-width: 242px;
+    height: 50px;
+    margin: 32px auto;
+    background: #00ebb2;
+    color: #01268a;
+    @media screen and (max-width: $tablet) {
+      max-width: 328px;
+      margin: 16px auto 24px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $laptop) {
+      max-width: 328px;
+      margin: 16px auto 24px;
+    }
+  }
+}

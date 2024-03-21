@@ -1,0 +1,29 @@
+@import 'styles/variables';
+
+.component {
+  background-color: #f6f4f8;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contacts {
+    width: 370px;
+  }
+  @media screen and (max-width: $tablet) {
+    .block {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .contacts {
+      max-width: 100%;
+    }
+    .form {
+      max-width: 100%;
+    }
+  }
+}

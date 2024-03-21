@@ -1,0 +1,70 @@
+@import 'styles/variables';
+
+.component {
+  padding: 16px 0 88px;
+  position: relative;
+  counter-reset: listItem;
+
+  .cardFlex {
+    display: flex;
+
+    @media screen and (max-width: $laptop) {
+      flex-direction: column-reverse;
+    }
+    .maintitle {
+      margin-bottom: 16px;
+      font-weight: 300;
+      font-size: 48px;
+      letter-spacing: 0;
+      color: #01268a;
+      width: 647px;
+      height: 112px;
+
+      @media screen and (min-width: $tablet) and (max-width: $laptop) {
+        margin: 16px auto;
+      }
+
+      @media screen and (max-width: $tablet) {
+        width: 300px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+    }
+    .subtitle {
+      text-align: start;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.5);
+      width: 585px;
+      @media screen and (min-width: $tablet) and (max-width: $laptop) {
+        margin: 0 auto;
+      }
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+      }
+    }
+  }
+  .image {
+    max-width: 400px;
+    @media screen and (min-width: $tablet) and (max-width: $laptop) {
+      margin: 0 auto;
+    }
+  }
+
+  .buyButton {
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    margin: 40px 0;
+    background: #00ebb2;
+    color: #01268a;
+    @media screen and (max-width: $tablet) {
+      margin: 40px 0;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $laptop) {
+      margin: 40px auto;
+    }
+  }
+}

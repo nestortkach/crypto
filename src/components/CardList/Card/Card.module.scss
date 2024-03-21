@@ -1,0 +1,45 @@
+@import 'styles/variables';
+
+.component {
+  text-align: center;
+  padding: 45px 35px;
+  border-radius: 8px;
+  background: #fff;
+  height: 100%;
+
+  &.shadow {
+    border: 1px solid #d7eafc;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  .title {
+    margin-bottom: 15px;
+  }
+
+  .iconWrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  @media screen and (max-width: $laptop) {
+    &.shadow {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}

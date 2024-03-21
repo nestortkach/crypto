@@ -1,0 +1,75 @@
+@import 'styles/variables';
+
+.component {
+  .button {
+    display: inline-flex;
+    border-radius: 4px;
+    color: #fff;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 11px 36px 11px 17px;
+    height: 38px;
+    overflow: hidden;
+    line-height: 1;
+    font-size: 15px;
+    background-color: $blue;
+    cursor: pointer;
+  }
+
+  .input {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+    width: 20px;
+    height: 16px;
+    pointer-events: none;
+    margin-right: 26px;
+  }
+
+  .placeholder {
+    font-weight: 700;
+  }
+
+  .fileList {
+    display: flex;
+    align-items: center;
+    padding: 24px 0 0;
+  }
+
+  .fileName {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    max-width: 100%;
+    padding-right: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .clear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    object {
+      pointer-events: none;
+    }
+  }
+
+  .error {
+    color: $red;
+    padding: 10px 0 5px;
+    display: flex;
+    line-height: 1.25;
+  }
+}
+
+.primary {
+  composes: primary from '../Button/Button.module.scss';
+}

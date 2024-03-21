@@ -1,0 +1,133 @@
+@import 'styles/variables';
+
+.container {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.newCardImg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  width: 72px;
+  height: 72px;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  margin-top: -190px;
+}
+
+.sectionWrapper {
+  margin: 0 48px;
+  @media (max-width: $laptop) {
+    margin: 0 24px;
+  }
+  @media (max-width: $tablet) {
+    margin: 0 16px;
+  }
+}
+
+.servicesTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.87px;
+  color: #ffffff;
+
+  @media (max-width: $tablet) {
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+
+.services {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  justify-content: center;
+  margin-top: 6rem;
+  gap: 1rem;
+
+  @media (max-width: 950px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  @media (max-width: 500px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: 200px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    padding: 1.5rem;
+    border-radius: 24px;
+    box-shadow: 0px 35px 61px 0px hsla(222, 99%, 30%, 0.1);
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    // justify-content: space-between;
+    // gap: 1rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 2px 24px rgba(0, 57, 166, 0.18);
+      transform: scale(1.05);
+    }
+
+    span {
+      font-size: 40px;
+      line-height: 1.17;
+    }
+
+    header {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21px;
+    }
+
+    section {
+      font-size: 14px;
+      color: hsla(0, 0%, 0%, 0.5);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      line-height: 24px;
+      align-items: flex-start;
+      flex-grow: 1;
+      row-gap: 21px;
+
+      @media (max-width: $tablet) {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    @media (max-width: 950px) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 16px;
+      width: 100%;
+      gap: 1rem;
+    }
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.serviceTitle {
+  color: black;
+}

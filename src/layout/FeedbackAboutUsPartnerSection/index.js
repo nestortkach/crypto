@@ -1,0 +1,1 @@
+export { FeedbackAboutUsPartnerSection } from './FeedbackAboutUsPartnerSection';

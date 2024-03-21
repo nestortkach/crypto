@@ -1,0 +1,31 @@
+@import 'styles/variables';
+.component {
+  margin: 100px 0;
+  .subTitle {
+    margin-top: 24px;
+  }
+  .itemsTitle {
+    margin-top: 80px;
+  }
+  .items {
+    margin-top: 24px;
+    ::marker {
+      color: #5583ff;
+      font-size: 2em;
+    }
+  }
+  .item {
+    @media screen and (max-width: $tablet) {
+      margin-top: 6px;
+    }
+    div {
+      margin-left: -6px;
+    }
+  }
+  .button {
+    margin: 80px auto 0 auto;
+    background-color: #04c697;
+    color: white;
+    padding: 12px 35px;
+  }
+}

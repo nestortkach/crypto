@@ -1,0 +1,108 @@
+@import "styles/variables.scss";
+
+.heading {
+  margin-top: 24px;
+  text-align: center;
+  color: $white;
+  font-weight: 700;
+  font-size: 37px;
+  letter-spacing: 0.87px;
+}
+.subHeading {
+  margin-top: 24px;
+  margin-bottom: 37px;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-weight: 400;
+  font-size: 20px;
+
+  @media (max-width: $tablet) {
+    color: $white;
+  }
+}
+
+.success {
+  max-width: fit-content;
+}
+
+.title {
+  margin-bottom: 16px;
+  padding: 0 20px;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+  padding: 0 20px;
+  color: $gray;
+}
+
+.input {
+  background: #fff;
+  border: 1px solid #d7eafc;
+  box-shadow: 0px 2px 16px rgba(0, 57, 166, 0.08);
+}
+
+.error {
+  background: #fff;
+  border: 1px solid $red;
+  box-shadow: 0px 2px 16px rgba(0, 57, 166, 0.08);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.button {
+  background: $blue;
+  margin-top: 8px;
+  color: white;
+  padding: 18px;
+}
+
+.flexContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  border: 1px solid rgba($blue, 0.2);
+  background: #fff;
+}
+
+.checkboxRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  label:first-child {
+    margin-bottom: 10px;
+    flex: 3;
+  }
+
+  label:last-child {
+    flex: 2;
+  }
+}
+
+.label {
+  font-size: 12px;
+  line-height: 12px;
+  color: $blue;
+  margin-bottom: 9px;
+}
+
+.servicesTitle {
+  font-size: 12px;
+  line-height: 1.3;
+}

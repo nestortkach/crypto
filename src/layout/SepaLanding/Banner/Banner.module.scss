@@ -1,0 +1,99 @@
+@import 'styles/variables';
+
+.component {
+  padding: 50px 0 70px;
+  color: #fff;
+
+  .title {
+    margin-bottom: 32px;
+  }
+
+  .subtext {
+    margin-bottom: 96px;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .contentPart {
+    width: calc(100% - 330px);
+    padding: 30px 40px 30px 0;
+    position: relative;
+    min-height: 375px;
+    flex-shrink: 0;
+  }
+
+  .textBlock {
+    padding-right: 30px;
+  }
+
+  .form {
+    max-width: 330px;
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footerItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    flex-shrink: 0;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 18px;
+      height: 37px;
+      width: 55px;
+      img {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        max-height: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 32px 0 40px;
+    :global {
+      .container {
+        max-width: 540px;
+      }
+    }
+    .title {
+      text-align: center;
+    }
+    .subtext {
+      width: 90%;
+      text-align: center;
+      margin: 0 auto 32px;
+    }
+    .form {
+      max-width: 470px;
+      margin: 0 auto 32px;
+    }
+    .contentPart {
+      width: 100%;
+      padding: 0;
+    }
+    .footerItem {
+      width: 100%;
+      align-items: center;
+      margin-bottom: 32px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

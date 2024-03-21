@@ -1,0 +1,12 @@
+@import 'styles/variables';
+
+.component {
+  padding: 64px 0 32px;
+
+  .title {
+    font-style: normal;
+    font-size: 37px;
+    line-height: 43px;
+    letter-spacing: 1px;
+  }
+}

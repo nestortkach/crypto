@@ -1,0 +1,83 @@
+@import 'styles/variables';
+
+.component {
+  min-height: 345px;
+  padding: 90px 0 177px;
+
+  .title {
+    line-height: 28px;
+    margin-bottom: 35px;
+  }
+
+  .subtext {
+    margin-bottom: 46px;
+  }
+
+  .content {
+    position: relative;
+    width: 68%;
+    margin-left: auto;
+    padding-left: 9.5%;
+  }
+
+  .imgWrap {
+    position: absolute;
+    width: 48%;
+    left: 0;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    transform: translate(-100%, -50%);
+    z-index: 1;
+
+    img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .btn {
+    min-width: 225px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 36px 0 72px;
+    .content {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .imgWrap {
+      position: relative;
+      top: auto;
+      left: auto;
+      max-width: 245px;
+      width: 100%;
+      margin: 0 auto 24px;
+      transform: none;
+    }
+
+    .title {
+      line-height: 42px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .subtext {
+      font-weight: 300;
+      margin-bottom: 24px;
+    }
+
+    .footer {
+      justify-content: center;
+    }
+  }
+}

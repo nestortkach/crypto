@@ -1,0 +1,48 @@
+@import 'styles/variables';
+
+.section {
+  text-align: center;
+
+  :global {
+    .container {
+      position: relative;
+      padding: 52px 0 72px;
+    }
+  }
+
+  .content {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .delimiter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 90%;
+    border-top: 1px solid rgb(0, 57, 166);
+    opacity: 0.25;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .title {
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+
+  .subtext {
+    margin-bottom: 30px;
+  }
+
+  .btnWrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactBtn {
+    min-width: 225px;
+    font-size: 18px;
+  }
+}

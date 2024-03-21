@@ -1,0 +1,152 @@
+.formWrapper {
+  justify-content: center;
+  display: flex;
+  margin-left: 48px;
+  margin-right: 48px;
+  background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  border-radius: 48px;
+}
+
+.container {
+  min-height: 600px;
+  max-width: 1280px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actionArea {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 83px;
+
+  h1 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #fff;
+  }
+
+  .subTitle {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.87px;
+    color: #fff;
+  }
+
+  .payImg {
+    display: flex;
+    align-items: center;
+    .wrapperIcon {
+      margin-right: 24px;
+    }
+    .footerSection {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      flex-shrink: 0;
+      color: #fff;
+      .footerItem {
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin-bottom: 18px;
+
+          img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            height: 37px;
+            width: 55px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.calculatorArea {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  max-width: 600px;
+  margin-right: 83px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  .cardBackround {
+    position: absolute;
+    right: 12%;
+    height: 100%;
+  }
+
+  .calculator {
+    max-width: 401px;
+    max-height: 416px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .formWrapper {
+    margin: 16px;
+
+    .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      background-size: contain;
+      background-position: bottom;
+      background-repeat: no-repeat;
+
+      .actionArea {
+        width: auto;
+        margin: 24px 24px 0 24px;
+
+        h1 {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 28px;
+        }
+
+        .subTitle {
+          margin-top: 12px;
+          margin-bottom: 12px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.87px;
+
+          br {
+            display: none;
+          }
+        }
+
+        .payImg {
+          img {
+            width: 36.17px;
+            height: 21px;
+            margin-right: 14px;
+          }
+        }
+      }
+
+      .calculatorArea {
+        justify-content: center;
+        padding: 20px 24px 100px 24px;
+        margin: 0;
+        width: auto;
+        background-size: contain;
+        background-position: bottom;
+      }
+    }
+  }
+}

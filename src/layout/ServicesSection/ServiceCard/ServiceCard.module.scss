@@ -1,0 +1,70 @@
+@import 'styles/variables';
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 5px;
+  background: $white;
+
+  // &:hover {
+  //   filter: drop-shadow(0 4px 15px rgba($dark-blue, 0.35));
+  // }
+
+  @media screen and (max-width: 1024px) {
+    flex: 50%;
+  }
+  @media screen and (max-width: $tablet) {
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 40px;
+    &:hover {
+      filter: none;
+    }
+  }
+}
+
+.serviceImg {
+  margin-bottom: 40px;
+  max-width: 244px;
+  @media screen and (max-width: $tablet) {
+    max-width: 75%;
+  }
+}
+
+.imageWrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceTitle {
+  margin-bottom: 26px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.serviceDesc {
+  text-align: center;
+  max-width: 284px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+  color: rgba(27, 33, 37, 0.75);
+}
+
+.button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  color: #5583ff;
+  cursor: pointer;
+  img {
+    margin-left: 5px;
+  }
+}

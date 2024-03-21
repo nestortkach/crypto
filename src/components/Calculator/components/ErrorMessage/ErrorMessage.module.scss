@@ -1,0 +1,24 @@
+@import '../../../../styles/variables';
+
+.errorWrapper {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 99;
+  height: auto;
+  padding: 8px 12px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  background: $red;
+  cursor: pointer;
+}
+
+.reduceFontSize {
+  font-size: 11px;
+}
+
+.underlinedText {
+  text-decoration: underline;
+}

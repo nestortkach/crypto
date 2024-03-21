@@ -1,0 +1,714 @@
+@import 'styles/variables';
+
+.component {
+  margin: 48px 0 88px;
+
+  .box {
+    padding: 48px 48px 48px 386px;
+    background-size: 290px;
+    min-height: 496px;
+    background-repeat: no-repeat;
+    background-position: 48px center;
+    background-color: $very-very-light-blue;
+    overflow: hidden;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: $laptop) {
+      padding: 168px 24px 24px 24px;
+      background-position: center 24px;
+      background-size: 120px;
+    }
+
+    h2,
+    h3 {
+      font-weight: 500;
+      // font-size: 32px;
+      font-size: 1.5em;
+      line-height: 47px;
+      letter-spacing: 0;
+      // color: #01268a;
+      @media screen and (max-width: $laptop) {
+        margin-bottom: 16px;
+        text-align: center;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #7888b2;
+      @media screen and (max-width: $laptop) {
+        text-align: center;
+      }
+    }
+
+    .article {
+      margin-bottom: 48px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width: $laptop) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .verge {
+    background-image: url('/xvg/xvg-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/xvg/xvg-bg-mobile.svg');
+    }
+  }
+
+  .kishu {
+    background-image: url('/kishu/kishu-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/kishu/kishu-bg-mobile.svg');
+    }
+  }
+
+  .tron {
+    background-image: url('/trx/trx-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/trx/trx-bg-mobile.svg');
+    }
+  }
+
+  .shiba {
+    background-image: url('/shib/shib-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/shib/shib-bg-mobile.svg');
+    }
+  }
+
+  .monero {
+    background-image: url('/xmr/xmr-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/xmr/xmr-bg-mobile.svg');
+    }
+  }
+
+  .world {
+    background-image: url('/world/world-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/world/world-bg-mobile.svg');
+    }
+  }
+
+  .doge {
+    background-image: url('/doge/doge-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/doge/doge-bg-mobile.svg');
+    }
+  }
+
+  .ada {
+    background-image: url('/ada/ada-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/ada/ada-bg-mobile.svg');
+    }
+  }
+
+  .tether {
+    background-image: url('/usdt/usdt-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/usdt/usdt-bg-mobile.svg');
+    }
+  }
+
+  .stellar {
+    background-image: url('/xlm/xlm-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/xlm/xlm-bg-mobile.svg');
+    }
+  }
+
+  .ripple {
+    background-image: url('/xrp/xrp-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/xrp/xrp-bg-mobile.svg');
+    }
+  }
+
+  .ethereum {
+    background-image: url('/eth/eth-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/eth/eth-bg-mobile.svg');
+    }
+  }
+
+  .uniswap {
+    background-image: url('/uni/uni-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/uni/uni-bg-mobile.svg');
+    }
+  }
+
+  .raven {
+    background-image: url('/rvn/rvn-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/rvn/rvn-bg-mobile.svg');
+    }
+  }
+
+  .chainlink {
+    background-image: url('/link/link-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/link/link-bg-mobile.svg');
+    }
+  }
+
+  .polkadot {
+    background-image: url('/dot/dot-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/dot/dot-bg-mobile.svg');
+    }
+  }
+
+  .pancake {
+    background-image: url('/cake/cake-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/cake/cake-bg-mobile.svg');
+    }
+  }
+
+  .bat {
+    background-image: url('/bat/bat-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/bat/bat-bg-mobile.svg');
+    }
+  }
+
+  .solana {
+    background-image: url('/sol/sol-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/sol/sol-bg-mobile.svg');
+    }
+  }
+
+  .share {
+    background-image: url('/shr/shr-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/shr/shr-bg-mobile.svg');
+    }
+  }
+
+  .dash {
+    background-image: url('/dash/dash-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/dash/dash-bg-mobile.svg');
+    }
+  }
+
+  .ontology {
+    background-image: url('/ont/ont-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/ont/ont-mobile.svg');
+    }
+  }
+
+  .horizen {
+    background-image: url('/zen/zen-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/zen/zen-bg-mobile.svg');
+    }
+  }
+
+  .nem {
+    background-image: url('/xem/xem-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/xem/xem-bg-mobile.svg');
+    }
+  }
+
+  .symbolToken {
+    background-image: url('/xym/xym-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/xym/xym-bg-mobile.svg');
+    }
+  }
+
+  .sushi {
+    background-image: url('/sushi/sushi-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/sushi/sushi-bg-mobile.svg');
+    }
+  }
+
+  .cryptoCom {
+    background-image: url('/cro/cro-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/cro/cro-bg-mobile.svg');
+    }
+  }
+
+  .harvestFinance {
+    background-image: url('/farm/farm-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/farm/farm-bg-mobile.svg');
+    }
+  }
+
+  .dfiMoney {
+    background-image: url('/yfii/yfii-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/yfii/yfii-bg-mobile.svg');
+    }
+  }
+
+  .daoMaker {
+    background-image: url('/dao/dao-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/dao/dao-bg-mobile.svg');
+    }
+  }
+
+  .hogeFinance {
+    background-image: url('/hoge/hoge-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/hoge/hoge-bg-mobile.svg');
+    }
+  }
+
+  .nowToken {
+    background-image: url('/now/now-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/now/now-bg-mobile.svg');
+    }
+  }
+
+  .aave {
+    background-image: url('/aave/aave-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/aave/aave-bg-mobile.svg');
+    }
+  }
+
+  .kusama {
+    background-image: url('/ksm/ksm-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/ksm/ksm-bg-mobile.svg');
+    }
+  }
+
+  .chiliz {
+    background-image: url('/chz/chz-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/chz/chz-bg-mobile.svg');
+    }
+  }
+
+  .wax {
+    background-image: url('/waxp/waxp-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/waxp/waxp-bg-mobile.svg');
+    }
+  }
+
+  .theta {
+    background-image: url('/theta/theta-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/theta/theta-bg-mobile.svg');
+    }
+  }
+
+  .filecoin {
+    background-image: url('/fil/fil-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/fil/fil-bg-mobile.svg');
+    }
+  }
+
+  .nano {
+    background-image: url('/nano/nano-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/nano/nano-bg-mobile.svg');
+    }
+  }
+
+  .bitcoin {
+    background-image: url('/btc/btc-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/btc/btc-bg-mobile.svg');
+    }
+  }
+
+  .klever {
+    background-image: url('/klv/klv-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/klv/klv-bg-mobile.svg');
+    }
+  }
+
+  .bitcoinCash {
+    background-image: url('/bch/bch-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/bch/bch-bg-mobile.svg');
+    }
+  }
+  .ark {
+    background-image: url('/ark/ark-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/ark/ark-bg-mobile.svg');
+    }
+  }
+  .icon {
+    background-image: url('/icx/icx-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/icx/icx-bg-mobile.svg');
+    }
+  }
+  .zilliqa {
+    background-image: url('/zil/zil-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/zil/zil-bg-mobile.svg');
+    }
+  }
+  .algorand {
+    background-image: url('/algo/algo-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/algo/algo-bg-mobile.svg');
+    }
+  }
+  .keanuInu {
+    background-image: url('/keanu/keanu-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/keanu/keanu-bg-mobile.svg');
+    }
+  }
+  .bluzelle {
+    background-image: url('/blz/blz-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/blz/blz-bg-mobile.svg');
+    }
+  }
+  .bread {
+    background-image: url('/brd/brd-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/brd/brd-bg-mobile.svg');
+    }
+  }
+
+  .bitgert {
+    background-image: url('/brise/brise-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/brise/brise-bg-mobile.svg');
+    }
+  }
+
+  .nyxToken {
+    background-image: url('/nyxt/nyxt-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/nyxt/nyxt-bg.svg');
+    }
+  }
+
+  .voltInu {
+    background-image: url('/volt/volt-bg.webp');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/volt/volt-bg.webp');
+    }
+  }
+
+  .floki {
+    background-image: url('/floki/floki-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/floki/floki-bg-mobile.svg');
+    }
+  }
+  .sand {
+    background-image: url('/sand/sand-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/sand/sand-bg-mobile.svg');
+    }
+  }
+  .avax {
+    background-image: url('/avax/avax-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/avax/avax-bg-mobile.svg');
+    }
+  }
+  .axs {
+    background-image: url('/axs/axs-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/axs/axs-bg-mobile.svg');
+    }
+  }
+  .hex {
+    background-image: url('/hex/hex-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/hex/hex-bg-mobile.svg');
+    }
+  }
+  .sanshu {
+    background-image: url('/sanshu/sanshu-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/sanshu/sanshu-bg-mobile.svg');
+    }
+  }
+
+  .koromaru {
+    background-image: url('/koromaru/koromaru-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/koromaru/koromaru-bg-mobile.svg');
+    }
+  }
+
+  .awc {
+    background-image: url('/awc/awc-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/awc/awc-bg-mobile.svg');
+    }
+  }
+
+  .feg {
+    background-image: url('/feg/feg-avatar.webp');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/feg/feg-avatar.webp');
+    }
+  }
+
+  .rainbow {
+    background-image: url('/rainbow/rainbow-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/rainbow/rainbow-bg-mobile.svg');
+    }
+  }
+  .ach {
+    background-image: url('/ach/ach-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/ach/ach-bg-mobile.svg');
+    }
+  }
+
+  .aergo {
+    background-image: url('/aergo/aergo-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/aergo/aergo-bg-mobile.svg');
+    }
+  }
+
+  .elf {
+    background-image: url('/elf/elf-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/elf/elf-bg-mobile.svg');
+    }
+  }
+
+  .mph {
+    background-image: url('/mph/mph-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/mph/mph-bg-mobile.svg');
+    }
+  }
+
+  .zrx {
+    background-image: url('/zrx/zrx-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/zrx/zrx-bg-mobile.svg');
+    }
+  }
+
+  .dlt {
+    background-image: url('/dlt/dlt-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/dlt/dlt-bg-mobile.svg');
+    }
+  }
+
+  .klee {
+    background-image: url('/klee/klee-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/klee/klee-bg-mobile.svg');
+    }
+  }
+  .usdc {
+    background-image: url('/usdc/usdc-desktop.png');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/usdc/usdc-mobile.png');
+    }
+  }
+  .ggtkn {
+    background-image: url('/ggtkn/ggtkn-logo.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/ggtkn/ggtkn-logo.svg');
+    }
+  }
+
+  .atom {
+    background-image: url('/atom/atom-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/atom/atom-mobile.png');
+    }
+  }
+  .vra {
+    background-image: url('/vra/vra-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/vra/vra-mobile.png');
+    }
+  }
+  .iota {
+    background-image: url('/iota/iota-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/iota/iota-mobile.png');
+    }
+  }
+  .fet {
+    background-image: url('/fet/fet-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/fet/fet-mobile.svg');
+    }
+  }
+  .op {
+    background-image: url('/op/op-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/op/op-mobile.svg');
+    }
+  }
+  .sxp {
+    background-image: url('/sxp/sxp-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/sxp/sxp-mobile.svg');
+    }
+  }
+
+  .cfx {
+    background-image: url('/cfx/cfx-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/cfx/cfx-mobile.svg');
+    }
+  }
+
+  .jasmy {
+    background-image: url('/jasmy/jasmy-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/jasmy/jasmy-mobile.svg');
+    }
+  }
+  .inj {
+    background-image: url('/inj/inj-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/inj/inj-mobile.svg');
+    }
+  }
+  .arb {
+    background-image: url('/arb/arb-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/arb/arb-mobile.svg');
+    }
+  }
+  .pepe {
+    background-image: url('/pepe/pepe-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/pepe/pepe-mobile.svg');
+    }
+  }
+  .gala {
+    background-image: url('/gala/gala-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/gala/gala-mobile.svg');
+    }
+  }
+  .babydoge {
+    background-image: url('/babydoge/babydoge-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/babydoge/babydoge-mobile.svg');
+    }
+  }
+  .iotx {
+    background-image: url('/iotx/iotx-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/iotx/iotx-mobile.svg');
+    }
+  }
+  .ocean {
+    background-image: url('/ocean/ocean-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/ocean/ocean-mobile.svg');
+    }
+  }
+  .ton {
+    background-image: url('/ton/ton-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/ton/ton-mobile.svg');
+    }
+  }
+  .raca {
+    background-image: url('/raca/raca-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/raca/raca-mobile.svg');
+    }
+  }
+  .tipsy {
+    background-image: url('/tipsy/tipsy-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/tipsy/tipsy-mobile.svg');
+    }
+  }
+  .kdoe {
+    background-image: url('/kdoe/kdoe-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/kdoe/kdoe-mobile.svg');
+    }
+  }
+  .brg {
+    background-image: url('/brg/brg-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/brg/brg-mobile.png');
+    }
+  }
+  .matic {
+    background-image: url('/matic/matic-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/matic/matic-mobile.png');
+    }
+  }
+  .ltc {
+    background-image: url('/ltc/ltc-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/ltc/ltc-mobile.png');
+    }
+  }
+  .one {
+    background-image: url('/one/one-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/one/one-bg-mobile.svg');
+    }
+  }
+
+  .mint {
+    background-image: url('/mint/mint-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/mint/mint-bg-mobile.svg');
+    }
+  }
+
+  .near {
+    background-image: url('/near/near-bg.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/near/near-bg-mobile.svg');
+    }
+  }
+  .egld {
+    background-image: url('/egld/egld-desktop.svg');
+    @media screen and (max-width: $laptop) {
+      background-image: url('/egld/egld-mobile.svg');
+    }
+  }
+
+  @media screen and (max-width: $laptop) {
+    margin: 16px 0;
+
+    :global {
+      .container {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  }
+}

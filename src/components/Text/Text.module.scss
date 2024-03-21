@@ -1,0 +1,52 @@
+@import 'styles/variables';
+
+.component {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  &.light {
+    font-weight: 300;
+  }
+  &.medium {
+    font-weight: 500;
+  }
+  &.bold {
+    font-weight: 700;
+  }
+  &.xxl {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  &.xl {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &.lg {
+    font-size: 20px;
+    line-height: 1.55;
+  }
+  &.md {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &.sm {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media screen and (max-width: $laptop) {
+    &.xxl {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    &.xl {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &.lg {
+      font-size: 18px;
+    }
+  }
+}

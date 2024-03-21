@@ -1,0 +1,136 @@
+@import 'styles/variables';
+
+.banner {
+  margin: 0 48px;
+  background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  border-radius: 48px;
+  position: relative;
+  overflow: hidden;
+  .imgMobile {
+    display: none;
+  }
+  .benefitsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2;
+      letter-spacing: 0.87px;
+    }
+  }
+
+  h2 {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 48px;
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+
+  .actionArea {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .text {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .content {
+    position: relative;
+    height: auto;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .imgWrapper {
+    margin: -50px -50px -50px 0;
+    flex: 1;
+
+    .img {
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      max-width: 520px;
+    }
+  }
+
+  @media screen and (max-width: $laptop) {
+    margin: 0 24px;
+
+    .content {
+      gap: 10px;
+    }
+
+    .imgWrapper {
+      margin: 0;
+
+      .img {
+        max-width: 450px;
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 16px;
+    border-radius: 24px;
+
+    h1 {
+      font-size: 32px;
+
+      .bold {
+        display: inline;
+      }
+    }
+
+    .benefitsList {
+      li {
+        font-size: 16px;
+      }
+    }
+
+    .content {
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 0 2rem;
+      gap: 30px;
+    }
+
+    .imgWrapper {
+      display: none;
+      width: 100%;
+
+      .img {
+        max-width: 400px;
+        right: auto;
+        align-self: center;
+      }
+    }
+    .imgMobile {
+      display: flex;
+      width: 320px;
+      height: 344px;
+    }
+    .text {
+      font-size: 16px;
+    }
+  }
+}

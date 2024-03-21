@@ -1,0 +1,53 @@
+@import 'styles/variables';
+
+.component {
+  padding: 40px 0 104px;
+  position: relative;
+
+  @media screen and (max-width: $tablet) {
+    padding: 32px 0 40px;
+  }
+
+  .title {
+    margin-bottom: 12px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+    color: #01268a;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 8px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    @media screen and (max-width: $mobileL) {
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+
+  .cardFlex {
+    display: flex;
+    gap: 142px;
+    justify-content: center;
+
+    @media screen and (max-width: 1130px) {
+      gap: 100px;
+    }
+    @media screen and (max-width: $laptop) {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+  .cardFlexRowOne {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .cardFlexRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

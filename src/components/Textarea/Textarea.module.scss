@@ -1,0 +1,17 @@
+.textarea {
+  composes: input from '../Input/Input.module.scss';
+  resize: none;
+  height: auto;
+
+  &_valid {
+    composes: input_valid from '../Input/Input.module.scss';
+  }
+}
+
+.label {
+  composes: label from '../Input/Input.module.scss';
+}
+
+.container {
+  composes: container from '../Input/Input.module.scss';
+}

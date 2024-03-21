@@ -1,0 +1,32 @@
+@import 'styles/variables';
+
+.component {
+  padding: 72px 0;
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .subtext {
+    margin-bottom: 32px;
+  }
+
+  .btn {
+    min-width: 200px;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 30px 0 56px;
+    text-align: center;
+    .subtext {
+      font-size: 16px;
+    }
+    .footer {
+      justify-content: center;
+    }
+  }
+}

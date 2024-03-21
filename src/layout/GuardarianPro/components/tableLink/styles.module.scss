@@ -1,0 +1,15 @@
+@import "styles/variables";
+
+.cellLink {
+  flex: 1;
+  color: $blue;
+  overflow: hidden;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: #01268a;
+  }
+}

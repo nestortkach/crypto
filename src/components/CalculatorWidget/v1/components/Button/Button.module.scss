@@ -1,0 +1,70 @@
+@import '../../../../../styles/variables';
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  background: none;
+  min-width: 167px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+
+  &.md {
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.rounded {
+  border-radius: 12px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.white {
+  color: $white;
+}
+
+.green {
+  background: var(--buttonBackground);
+  color: var(--buttonColor);
+
+  &:disabled {
+    background: var(--buttonBackgroundDisabled);
+  }
+}
+
+.grey {
+  background-color: transparent;
+  color: #fff;
+
+  &.active {
+    background-color: var(--buttonsGroupButtonBackgroundActive);
+    color: var(--buttonsGroupButtonColorActive) !important;
+  }
+}

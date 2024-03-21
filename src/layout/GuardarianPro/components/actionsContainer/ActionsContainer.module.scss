@@ -1,0 +1,65 @@
+@import "styles/variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  padding: 0;
+
+  .btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+
+    &:disabled {
+      cursor: not-allowed;
+
+      .image {
+        path {
+          fill: #4c9de888;
+        }
+      }
+    }
+
+    &:hover:enabled {
+      .image path {
+        fill: #01268a;
+      }
+    }
+  }
+
+  .image {
+    path {
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.popup {
+  backdrop-filter: none;
+  background-color: rgba($black, 0.8);
+
+  .actionButtonsContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+
+    .actionButton {
+      padding: 12px 32px;
+      border-radius: 16px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.5;
+      min-width: unset;
+      height: auto;
+
+      @media (max-width: $mobileL) {
+        padding: 8px 24px;
+      }
+    }
+  }
+}

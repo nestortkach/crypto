@@ -1,0 +1,29 @@
+@import 'styles/variables';
+
+.label {
+  position: relative;
+  padding-left: 23px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input {
+  display: none;
+
+  &:checked + .checkbox {
+    background-image: url('checked.svg');
+    border: none !important;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  border: 1px solid rgba($gray, 0.2);
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

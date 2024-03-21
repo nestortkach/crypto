@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /pro/*
+Disallow: /pro$
+Disallow: /?_ga=*
+
+Sitemap: https://guardarian.com/sitemap.xml

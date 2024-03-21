@@ -1,0 +1,29 @@
+@import 'styles/variables';
+
+.component {
+  .content {
+    & > * {
+      margin-bottom: 16px;
+    }
+    li {
+      line-height: 20px;
+    }
+  }
+
+  .title {
+    margin-bottom: 18px;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: $tablet) {
+    .title {
+      margin-bottom: 15px;
+    }
+    .content {
+      padding-left: 45px;
+    }
+  }
+}

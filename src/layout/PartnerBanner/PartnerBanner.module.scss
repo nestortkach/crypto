@@ -1,0 +1,99 @@
+@import 'styles/variables';
+
+.banner {
+  padding-top: 75px;
+  padding-bottom: 55px;
+  color: #fff;
+  letter-spacing: 0.87px;
+  overflow: hidden;
+
+  @media screen and (max-width: $tablet) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .requestCard {
+    background-color: white;
+    color: #012080;
+    height: 50px;
+    text-align: center;
+    max-width: 207px;
+    cursor: pointer;
+  }
+
+  .heading {
+    margin-bottom: 35px;
+  }
+
+  .subText {
+    margin-bottom: 55px;
+    color: #ffffffb2;
+    text-align: justify;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+
+  .footer {
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    .icon {
+      display: block;
+      width: 35px;
+      height: 24px;
+      margin-left: -5px;
+    }
+    .featureText {
+      @media screen and (max-width: $tablet) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 15px;
+    padding-bottom: 0;
+    .content {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+    .imgWrap {
+      padding-bottom: 20px;
+      margin: 0 auto;
+      @media screen and (max-width: $tablet) {
+        img {
+          width: 80%;
+        }
+      }
+    }
+
+    .heading {
+      margin-bottom: 12px;
+      font-size: 26px !important;
+    }
+    .subText {
+      margin-bottom: 12px;
+      font-size: 16px !important;
+      text-align: center;
+    }
+    .requestCard {
+      margin-top: 10px;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}

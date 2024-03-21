@@ -1,0 +1,128 @@
+.aboutUsWrapper {
+  justify-content: center;
+  display: flex;
+  margin-left: 48px;
+  margin-right: 48px;
+  .container {
+    min-height: 447px;
+    width: 100%;
+    max-width: 1280px;
+    padding-top: 83px;
+    padding-bottom: 83px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+
+    h2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 66px;
+      letter-spacing: 0.87px;
+      color: #01268a;
+      margin-bottom: 12px;
+      padding-left: 83px;
+      padding-right: 83px;
+    }
+    .subHeader {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.87px;
+      color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 48px;
+      padding-left: 83px;
+      padding-right: 83px;
+    }
+    .mediaContainer {
+      display: flex;
+      justify-content: center;
+
+      row-gap: 32px;
+      column-gap: 32px;
+      width: 100%;
+      .mediaItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 318px;
+        height: 216px;
+        margin: 16px;
+        padding: 32px;
+        background: #f3f9ff;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 32px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        .imgContaimer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100px;
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .aboutUsWrapper {
+    .container {
+      .mediaContainer {
+        .mediaItem {
+          width: 270px;
+          height: 183px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .aboutUsWrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+    .container {
+      padding: 0px;
+      width: 100%;
+      margin-top: 40px;
+      justify-content: flex-start;
+      h2 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.87px;
+      }
+      h3 {
+        margin: 0;
+        padding: 12px 0;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.87px;
+      }
+      .mediaContainer {
+        flex-direction: column;
+      }
+      .carousel_arrows {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        span {
+          margin: 16px;
+        }
+      }
+    }
+  }
+}

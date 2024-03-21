@@ -1,0 +1,75 @@
+@import "styles/variables";
+
+.banner {
+  padding-top: 45px;
+  padding-bottom: 50px;
+
+  .subtext {
+    font-size: 14px;
+
+    strong {
+      font-weight: 500;
+    }
+  }
+}
+
+.bannerContainer {
+  background-color: $light-gray;
+  padding: 0 32px;
+
+  @media screen and (max-width: $tablet) {
+    padding: 0 10px;
+  }
+}
+
+.sidebarList {
+  padding-left: 24px;
+
+  li {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.collapsible {
+  .title {
+    position: relative;
+    padding-right: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      width: 11px;
+      height: 7px;
+      background: url("/chevrone-down.svg") no-repeat center;
+      background-size: 100% auto;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .banner {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+    color: $black;
+    background-color: $light-gray;
+
+    .subtext {
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 16px;
+      font-weight: 400;
+    }
+  }
+  .content {
+    padding-top: 0;
+  }
+}

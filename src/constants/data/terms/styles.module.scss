@@ -1,0 +1,14 @@
+@import "styles/variables";
+
+.list {
+  counter-reset: list;
+
+  li {
+    list-style-type: none;
+
+    &::before {
+      counter-increment: list;
+      content: attr(data-count) "." counter(list) " ";
+    }
+  }
+}

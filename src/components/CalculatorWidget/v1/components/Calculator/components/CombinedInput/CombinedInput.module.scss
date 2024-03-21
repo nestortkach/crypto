@@ -1,0 +1,104 @@
+@import "styles/variables";
+
+.container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  flex-direction: column;
+
+  &.hasError {
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: -1px;
+      left: 0px;
+      right: 0px;
+      bottom: -1px;
+      border: 2px solid $red;
+      border-radius: 8px 8px 0 0;
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    .label {
+      color: $red;
+    }
+
+    div {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    font-weight: normal;
+    opacity: 1;
+    color: $gray;
+  }
+
+  &.focus {
+    border: 1px solid #4c9de8;
+    filter: drop-shadow(0 2px 16px rgba(0, 57, 166, 0.08));
+  }
+
+  .input {
+    display: block;
+    padding: 8px 14px;
+    flex-grow: 1;
+    background-color: var(--combinedInputBackgroundColor);
+    border-radius: 8px 0 0 8px;
+  }
+}
+
+.inputClass {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  padding: 0;
+
+  @media (max-width: $mobileL) {
+    font-size: 16px;
+  }
+}
+
+.label {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 12px;
+  color: $blue;
+  margin-bottom: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.loader {
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  display: block;
+
+  &::after {
+    width: 12px;
+    height: 12px;
+    border-width: 2px;
+    border-color: #000 #000 #000 transparent;
+  }
+}
+
+.fromWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+}

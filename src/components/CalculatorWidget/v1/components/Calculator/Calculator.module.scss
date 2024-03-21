@@ -1,0 +1,352 @@
+@import "styles/variables.scss";
+
+.calculator {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  border-radius: 24px;
+  background: var(--calcBackground);
+  color: #fff;
+
+  .toggleNav {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 4px;
+    background-color: var(--buttonsGroupButtonBackground);
+    border-radius: 8px;
+
+    .navBtn {
+      width: 50%;
+      min-width: 116px;
+      height: 32px;
+      padding: 0;
+      color: var(--buttonsGroupButtonColor);
+    }
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .buyButton {
+    height: 48px;
+    margin-top: 16px;
+    color: var(--buttonColor);
+    font-size: 16px;
+    font-weight: 700;
+
+    @media screen and (max-width: $tablet) {
+      margin-top: 12px;
+    }
+  }
+
+  .error {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 12px 20px 0;
+    font-size: 14px;
+    color: var(--error);
+    transform: translateY(100%);
+  }
+}
+
+.combinedInput {
+  width: 100%;
+  border: none;
+  height: 20px;
+  font-size: 16px;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+.loader {
+  width: 15px;
+  height: 15px;
+
+  &::after {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+.combinedInputContainer {
+  sup {
+    display: none;
+  }
+
+  label {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+}
+
+.inputSelect {
+  width: 142px;
+  position: static !important;
+  flex-shrink: 0;
+  background-color: var(--inputSelectBackground);
+  color: var(--inputSelectColor);
+  border: none;
+  border-radius: 0 8px 8px 0;
+
+  :global {
+    .select {
+      position: static;
+      display: flex;
+      align-items: center;
+      padding: 12px 0 12px 15px;
+      height: 100%;
+      border: none;
+
+      .currency-item {
+        font-weight: 500;
+        font-size: 20px;
+        padding-left: 0;
+        color: var(--inputSelectColor);
+      }
+      .currency-name {
+        display: none;
+      }
+      .select__caret {
+        width: 24px;
+        height: 24px;
+
+        path {
+          fill: var(--inputSelectCaret);
+        }
+      }
+      .select__caret2 {
+        width: 24px;
+        height: 24px;
+
+        path {
+          fill: #1d1f24;
+        }
+      }
+    }
+    .currency-item {
+      overflow: hidden;
+      font-size: 16px;
+      font-weight: 500;
+      padding-left: 20px;
+      padding-right: 30px;
+      color: #1b2125;
+
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .currency-name {
+        font-size: 14px;
+        color: #adadad;
+        line-height: 16px;
+        font-weight: 400;
+      }
+    }
+    .select_drop-menu {
+      right: 0;
+      margin-top: 0;
+      border-radius: 8px;
+    }
+    .img {
+      margin-right: 8px;
+    }
+    .ticker {
+      min-width: 80px;
+    }
+    .ticker2 {
+      color: #1d1f24;
+      min-width: 80px;
+    }
+    .search-wrapper {
+      display: flex;
+      padding: 18px;
+      border-bottom: 1px solid #d7eafc;
+      &::before {
+        content: "";
+        flex-shrink: 0;
+        display: block;
+        margin-top: 3px;
+        width: 20px;
+        height: 20px;
+        background: url("/calculator/search.svg") center no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+
+      input {
+        padding-left: 10px;
+        height: 24px;
+        font-size: 20px;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .calculator {
+    .error {
+      position: relative;
+      transform: none;
+      padding: 12px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calculator {
+    padding: 12px;
+  }
+}
+
+.wide {
+  &_calculator {
+    gap: 24px;
+    max-width: 1000px;
+
+    @media screen and (max-width: $tablet) {
+      gap: 0;
+    }
+  }
+
+  &_inputContainer {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    align-items: center;
+
+    .wideInputContainer {
+      padding: 4px 12px;
+    }
+
+    .wideButton {
+      height: 46px;
+      min-width: 170px;
+      border-radius: 8px;
+      margin-top: 0;
+
+      @media screen and (max-width: 1100px) {
+        min-width: 130px;
+      }
+
+      @media screen and (max-width: 850px) {
+        min-width: 120px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 890px) {
+      gap: 12px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &_toggleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 46px;
+
+    .wide_toggleNav {
+      margin: 0;
+      max-width: 300px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      height: auto;
+
+      .wide_toggleNav {
+        max-width: none;
+      }
+    }
+  }
+}
+
+.fullPageText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.87px;
+  margin-bottom: 20px;
+  color: #53576d;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.fullPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 450px;
+  align-items: center;
+  padding: 24px 40px;
+  gap: 10px;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+
+  .text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.37px;
+    color: rgba(1, 15, 100, 0.46);
+  }
+
+  .icon {
+    min-width: 37px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 16px 32px;
+
+    .text {
+      font-size: 12px;
+    }
+  }
+}
+
+.poweredByText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.87px;
+  color: rgba(1, 15, 100, 0.46);
+
+  p {
+    margin: 0 auto;
+  }
+}

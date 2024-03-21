@@ -1,0 +1,1 @@
+export { TermsLayout } from './TermsLayout';

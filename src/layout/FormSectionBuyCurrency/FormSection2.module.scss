@@ -1,0 +1,182 @@
+@import 'styles/variables';
+
+.component {
+  height: auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  @media (max-width: $laptop) {
+    padding: 25px 0 50px 0;
+
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  h1 {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 56px;
+
+    @media (max-width: $laptop) {
+      font-size: 32px;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+
+  ul:not(:global .react-datepicker__time-list) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      color: white;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.2;
+      letter-spacing: 0.87px;
+
+      @media (max-width: $laptop) {
+        font-size: 16px;
+      }
+
+      &::before {
+        content: '•';
+        font-size: 24px;
+        font-weight: 400;
+        margin-right: 18px;
+
+        @media (max-width: $laptop) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.formWrapper {
+  max-width: 1440px;
+  display: grid;
+  background: url('/arrows.png'), linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  background-position: left center;
+  width: 100%;
+  margin-left: 48px;
+  margin-right: 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 48px;
+  position: relative;
+
+  @media screen and (max-width: $laptop) {
+    margin: 0 24px;
+  }
+
+  @media (max-width: $laptop) {
+    background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+    background-position: 100% 180%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin: 0 16px;
+    border-radius: 24px;
+  }
+
+  @media (max-width: $mobileL) {
+    background-position: 100% 130%;
+  }
+}
+
+.button {
+  background-color: #fff;
+  border-radius: 16px;
+  max-width: 100%;
+  padding: 1rem 0;
+  display: grid;
+  place-items: center;
+  color: #0042b8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.actionArea {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  // padding: 0rem 2rem;
+}
+
+.paymentList {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400px;
+  font-size: 24px;
+  color: #fff;
+  width: 507px;
+
+  @media (max-width: $laptop) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.88px;
+    text-align: left;
+    width: 95%;
+  }
+}
+
+.bottomTxt {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.87px;
+  color: #fff;
+  @media (max-width: $laptop) {
+    margin-top: 10px;
+  }
+}
+.textWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  @media (max-width: $laptop) {
+    justify-content: center;
+  }
+}
+
+.image {
+  @media (max-width: $laptop) {
+    display: none;
+  }
+}
+
+.calculatorArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+
+  @media (max-width: $laptop) {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .component {
+    h1 {
+      font-size: clamp(1.5rem, 8vw, 3rem);
+    }
+  }
+}

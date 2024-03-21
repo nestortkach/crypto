@@ -1,0 +1,42 @@
+@import 'styles/variables';
+
+.component {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.275;
+  &.xl {
+    font-size: 36px;
+  }
+  &.lg {
+    font-size: 32px;
+  }
+  &.md {
+    font-size: 24px;
+  }
+  &.sm {
+    font-size: 20px;
+  }
+  &.bold {
+    font-weight: 700;
+  }
+  &.medium {
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: $tablet) {
+    &.xl {
+      font-size: 32px;
+    }
+    &.lg {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width: 340px) {
+    &.xl {
+      font-size: 30px;
+    }
+    &.md {
+      font-size: 21px;
+    }
+  }
+}

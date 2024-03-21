@@ -1,0 +1,39 @@
+@import 'styles/variables';
+
+.box {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip {
+  max-width: 250px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 24px 16px 16px;
+  visibility: hidden;
+  color: $blue;
+  background-color: $white;
+  border: 1px solid #d7eafc;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: initial;
+  text-transform: none;
+  border-radius: 8px;
+  z-index: 10000000;
+
+  &_visible {
+    visibility: visible;
+    box-shadow: 0 2px 16px rgba(0, 57, 166, 0.08);
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}

@@ -1,0 +1,36 @@
+@import 'styles/variables';
+
+.section {
+  padding: 72px 0 46px;
+  text-align: center;
+
+  .title {
+    margin-bottom: 44px;
+  }
+
+  .card {
+    padding: 0 5px 48px;
+    :global {
+      .card-title {
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  .cardIcon {
+    position: relative;
+    width: 104px;
+    height: 104px;
+  }
+
+  .labelIcon {
+    position: absolute;
+    top: -7px;
+    left: -22px;
+    z-index: 1;
+  }
+
+  .footer {
+    line-height: 40px;
+  }
+}

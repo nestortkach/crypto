@@ -1,0 +1,151 @@
+@import "styles/variables";
+
+.button {
+  font-family: "Roboto", sans-serif;
+  background: none;
+  min-width: 167px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+
+  &.md {
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.primary {
+  color: $white;
+  background-color: $blue;
+
+  &:disabled {
+    background-color: rgba($blue, 0.35);
+  }
+}
+.lightGreen {
+  background: #00ebb2;
+  border-radius: 16px;
+}
+.primaryDark {
+  color: #adadad;
+  background-color: #0a2364;
+
+  &.active,
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+  &:disabled {
+    background-color: $gray;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: not-allowed;
+  }
+}
+.blue {
+  color: #5583ff;
+  background-color: #f3f9ff;
+
+  &.active,
+  &:hover {
+    background-color: #5583ff;
+    color: $white;
+  }
+  &:disabled {
+    background-color: $gray;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: not-allowed;
+  }
+}
+
+.customBlue {
+  color: #5583ff;
+
+  &:hover {
+    background-color: #5582ff21;
+  }
+
+  &.active {
+    background-color: #5583ff;
+    color: $white;
+  }
+
+  &:disabled {
+    background-color: $gray;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: not-allowed;
+  }
+}
+
+.darkBlue {
+  color: $dark-blue;
+}
+
+.outline {
+  background-color: transparent;
+  border: 1px solid currentColor;
+
+  &:hover {
+    border-color: $blue;
+    color: $blue;
+  }
+}
+
+.white {
+  color: $white;
+}
+
+.green {
+  background: $green;
+  color: $white;
+
+  &:disabled {
+    background: rgba(0, 153, 109, 0.3);
+  }
+}
+
+.grey {
+  background-color: transparent;
+  color: #fff;
+
+  &.active {
+    background-color: rgba(255, 255, 255, 0.988);
+    color: hsla(224, 99%, 27%, 1);
+  }
+}
+
+.lightGray {
+  background-color: $light-gray;
+  color: $dark-dark-blue;
+}

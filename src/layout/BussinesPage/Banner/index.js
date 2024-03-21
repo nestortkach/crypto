@@ -1,0 +1,1 @@
+export { BPBanner } from './BPBanner';

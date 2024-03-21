@@ -1,0 +1,117 @@
+@import 'styles/variables';
+
+.component {
+  background-color: white;
+  margin-bottom: -1px;
+  .flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 600px;
+    padding: 90px 0 50px;
+    color: #000;
+  }
+
+  .content {
+    width: calc(100% - 402px);
+    padding: 0 40px 30px 0;
+    position: relative;
+    min-height: 375px;
+    flex-shrink: 0;
+  }
+
+  .formWrap {
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    border-radius: 24px;
+  }
+
+  .calc {
+    max-width: 330px;
+    width: 100%;
+    //box-shadow: 0 4px 40px 0 #0669fd40;
+    border-radius: 24px;
+    background-color: white;
+  }
+
+  .title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 31px;
+    letter-spacing: 0.87px;
+    color: black;
+    @media screen and (max-width: 767px) {
+      margin-top: 50px;
+    }
+  }
+
+  .subText {
+    margin-bottom: 32px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .listTitle {
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .list {
+    margin-top: 13px;
+  }
+  .listItem {
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.8);
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    &::before {
+      content: ' ';
+      display: block;
+      width: 28px;
+      height: 28px;
+      background-image: url('/circle.svg');
+      background-size: 28px;
+      margin-top: -3px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 12px 0 0 0;
+    max-width: 540px;
+    margin: 0 auto;
+
+    .title {
+      margin-bottom: 12px;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: left;
+      letter-spacing: 0.87px;
+    }
+
+    .subText {
+      margin-bottom: 24px;
+      font-size: 14px;
+      letter-spacing: 0;
+      text-align: left;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 20px;
+    }
+
+    .content {
+      width: 100%;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 15px;
+    }
+
+    .calc {
+      max-width: 100%;
+      margin-bottom: 12px;
+    }
+  }
+}

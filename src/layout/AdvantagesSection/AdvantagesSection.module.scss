@@ -1,0 +1,29 @@
+@import 'styles/variables';
+
+.section {
+  overflow: hidden;
+  padding-top: 55px;
+  padding-bottom: 72px;
+
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  :global {
+    .card-text {
+      max-width: 210px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 50px;
+    padding-bottom: 64px;
+
+    .title {
+      margin-bottom: 35px;
+    }
+  }
+}

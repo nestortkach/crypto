@@ -1,0 +1,73 @@
+@import 'styles/variables';
+
+.component {
+  overflow: hidden;
+  background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  color: #fff;
+
+  .title {
+    margin-bottom: 32px;
+  }
+
+  .content {
+    position: relative;
+    width: 70%;
+    max-width: 545px;
+    min-height: 345px;
+    padding: 90px 10% 90px 0;
+  }
+
+  .imgWrap {
+    position: absolute;
+    width: 132%;
+    height: 100%;
+    right: 14%;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    transform: translateX(100%);
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  @media all and (max-width: $laptop) {
+    .imgWrap {
+      width: 100%;
+      right: 20%;
+    }
+  }
+
+  @media all and (max-width: $tablet) {
+    padding: 100px 0 36px;
+    .content {
+      max-width: 480px;
+      width: 100%;
+      padding: 32px 0;
+      margin: auto;
+      text-align: center;
+    }
+
+    .imgWrap {
+      position: relative;
+      right: auto;
+      top: auto;
+      max-width: 240px;
+      margin: 0 auto 32px;
+      width: 100%;
+      transform: none;
+    }
+
+    .title {
+      line-height: 38px;
+    }
+
+    .subtext {
+      font-weight: 300;
+    }
+  }
+}

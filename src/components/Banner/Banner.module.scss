@@ -1,0 +1,9 @@
+@import 'styles/variables';
+
+.component {
+  padding: 0 32px;
+  color: #fff;
+  @media screen and (max-width: $tablet) {
+    padding: 0 10px;
+  }
+}

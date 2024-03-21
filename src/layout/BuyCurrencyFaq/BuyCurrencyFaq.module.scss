@@ -1,0 +1,73 @@
+@import 'styles/variables';
+
+.component {
+  padding: 16px 0 20px;
+  position: relative;
+  counter-reset: listItem;
+
+  .sectionTitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 32px;
+    color: #7888b3;
+  }
+  .footer {
+    padding: 40px 0;
+
+    .btn {
+      min-width: 230px;
+    }
+  }
+
+  :global {
+    .rc-collapse-item {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    :global {
+      .dynamic-content {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.maintitle {
+  margin-bottom: 32px;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0;
+  color: #01268a;
+  @media screen and (max-width: $tablet) {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
+
+.title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0;
+  margin-top: 16px;
+  color: #01268a;
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 14px;
+  }
+}

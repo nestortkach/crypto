@@ -1,0 +1,64 @@
+@import 'styles/variables';
+
+.sellAll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: $laptop) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.title {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 56px;
+  letter-spacing: 0;
+  text-align: left;
+  background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image {
+  @media screen and (max-width: $mobileL) {
+    width: 100%;
+  }
+}
+
+.body {
+  margin-top: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #7888b2;
+}
+
+.button {
+  cursor: pointer;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background: var(--buttonBackground);
+  box-shadow: 0 2px 16px 0 #0039a614;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 14px 57px;
+  border-radius: 8px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

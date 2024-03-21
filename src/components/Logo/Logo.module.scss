@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+.logo {
+  display: flex;
+  max-width: 250px;
+  align-items: center;
+  position: relative;
+
+  .logoPng {
+    max-width: 100%;
+    width: 216.5px;
+
+    @media screen and (max-width: $mobileL) {
+      width: 216.5px;
+      height: 24px;
+    }
+  }
+}

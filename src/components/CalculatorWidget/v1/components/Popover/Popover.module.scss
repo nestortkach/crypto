@@ -1,0 +1,40 @@
+@import 'styles/variables.scss';
+
+.box {
+  position: relative;
+  cursor: pointer;
+}
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 24px 16px 16px;
+  visibility: hidden;
+  transform: translate(-50%, -10%);
+  color: $blue;
+  background-color: $white;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: initial;
+  white-space: nowrap;
+  text-transform: none;
+  border-radius: 8px;
+  z-index: 10000000;
+
+  &_visible {
+    visibility: visible;
+    transform: translate(-50%, -10%);
+    box-shadow: 0 2px 16px rgba(0, 57, 166, 0.08);
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}

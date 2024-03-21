@@ -1,0 +1,190 @@
+@import 'styles/variables';
+
+.component {
+  display: flex;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 0 90px;
+  }
+
+  .mainsection {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    padding: 40px 0;
+
+    @media screen and (max-width: $laptop) {
+      gap: 24px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+    }
+  }
+
+  .heading {
+    line-height: 47px;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 35px;
+
+    @media screen and (max-width: $laptop) {
+      margin-bottom: 24px;
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 12px;
+      line-height: 35px;
+      font-size: 27px;
+    }
+  }
+
+  .subText {
+    margin-bottom: 55px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25.78px;
+    z-index: 1;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .btn {
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .imgWrap {
+    img {
+      display: block;
+      max-width: 365px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: $laptop) {
+    .content {
+      width: 50%;
+    }
+    .imgWrap {
+      width: 100%;
+      padding-left: 40px;
+    }
+    .subText {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+  }
+
+  .calcWrap {
+    padding: 15px 0 32px;
+    width: 100%;
+    max-width: 400px;
+
+    @media screen and (max-width: $tablet) {
+      padding: 15px 0 68px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    .content {
+      padding: 24px 0 12px;
+      width: 100%;
+      max-width: 480px;
+      margin: auto;
+    }
+    .imgWrap {
+      position: relative;
+      top: auto;
+      right: auto;
+      transform: none;
+      max-width: 250px;
+      margin: 0 auto 32px;
+    }
+
+    .footer {
+      justify-content: center;
+    }
+    .btn {
+      max-width: 242px;
+    }
+  }
+}
+
+.bannerWrapper {
+  margin: 0 48px;
+  background: url('/business-wrap-img.webp'), linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  background-position: 110% 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 48px;
+  position: relative;
+
+  @media screen and (max-width: 1340px) {
+    background-position: 150% 0%;
+  }
+  @media screen and (max-width: 1200px) {
+    background-position: 200% 0%;
+  }
+  @media screen and (max-width: $laptop) {
+    margin: 0 24px;
+  }
+
+  @media (max-width: $tablet) {
+    background-position: 0% 100%;
+    margin: 0 16px;
+    border-radius: 24px;
+  }
+}
+
+.bannerImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+
+  img {
+    margin: 0 0 120px 1000px;
+    height: 800px;
+
+    @media (max-width: $tablet) {
+      margin: 200px 0 0px 300px;
+      height: 500px;
+    }
+  }
+}
+
+.paymentList {
+  img {
+    width: 45px;
+    height: 35px;
+
+    @media (max-width: $tablet) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  display: flex;
+  gap: 24px;
+  height: 44px;
+  align-items: center;
+  margin-top: 32px;
+
+  @media (max-width: $tablet) {
+    height: 32px;
+    margin-top: 12px;
+  }
+}

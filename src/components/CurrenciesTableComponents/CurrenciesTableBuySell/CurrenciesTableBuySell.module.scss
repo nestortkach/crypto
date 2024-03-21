@@ -1,0 +1,15 @@
+@import 'styles/variables';
+.buySell {
+  display: flex;
+  justify-content: flex-end;
+  :first-child {
+    margin-right: 8px;
+  }
+  //@media screen and (max-width: $mobileL) {
+  //  flex-direction: column;
+  //  justify-content: center;
+  //  :first-child {
+  //    margin-right: 0;
+  //  }
+  //}
+}

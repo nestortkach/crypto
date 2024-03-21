@@ -1,0 +1,48 @@
+@import 'styles/variables';
+
+.contactForm {
+  width: 430px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.input {
+  padding: 6px 12px;
+  height: 40px;
+  border: 1px solid #d7eafc;
+  box-shadow: 0 2px 16px rgba(0, 57, 166, 0.08);
+
+  &::placeholder {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #a4a3aa;
+  }
+}
+
+.textarea {
+  padding: 6px 12px;
+  border: 1px solid #d7eafc;
+  box-shadow: 0 2px 16px rgba(0, 57, 166, 0.08);
+}
+
+.row {
+  margin-bottom: 16px;
+
+  label {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.button {
+  height: 48px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.success,
+.error {
+  text-align: center;
+  margin: 30px;
+}

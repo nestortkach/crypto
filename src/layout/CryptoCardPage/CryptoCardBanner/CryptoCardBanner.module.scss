@@ -1,0 +1,204 @@
+@import "styles/variables";
+
+.banner {
+  margin: 0 48px;
+  background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  border-radius: 48px;
+  position: relative;
+
+  .benefitsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 1.2;
+      letter-spacing: 0.87px;
+    }
+  }
+
+  .paymentList {
+    display: flex;
+    gap: 24px;
+    height: 50px;
+    align-items: center;
+
+    a {
+      cursor: pointer;
+      border: 2px solid #e8e8e8;
+      box-shadow: 0px 33px 51px rgba(0, 0, 0, 0.08), 0px 9.94853px 15.375px rgba(0, 0, 0, 0.0582218),
+        0px 4.13211px 6.38599px rgba(0, 0, 0, 0.0399899), 0px 1.4945px 2.30969px rgba(0, 0, 0, 0.0268173);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 140px;
+      height: 50px;
+      background-color: $white;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+      padding: 0 5px;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .paymentList a:last-child {
+    width: 50px;
+  }
+
+  h1 {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 56px;
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+
+  .actionArea {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .content {
+    height: auto;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .imgWrapper {
+    flex: 1;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .bonusText {
+    color: #00ebb2;
+  }
+
+  .cashbackBanner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(23px);
+    border-radius: 24px;
+
+    &_title {
+      color: $white;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    &_text {
+      color: #ffffffb3;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: $laptop) {
+    margin: 0 24px;
+
+    .content {
+      gap: 10px;
+    }
+
+    .imgWrapper {
+      margin: 0;
+      display: flex;
+      width: 300px;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 16px;
+    border-radius: 24px;
+
+    h1 {
+      font-size: 32px;
+
+      .bold {
+        display: inline;
+      }
+    }
+
+    .paymentList {
+      gap: 12px;
+      a {
+        width: auto;
+      }
+    }
+
+    .benefitsList {
+      li {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 140%;
+        letter-spacing: 0;
+
+        gap: 5px;
+      }
+    }
+
+    .content {
+      flex-direction: column;
+      padding: 2rem 0 0;
+      gap: 0;
+    }
+
+    .imgWrapper {
+      position: static;
+      display: flex;
+      width: 100%;
+      max-width: 350px;
+      align-self: center;
+      margin-bottom: 24px;
+    }
+
+    .cashbackBanner {
+      max-width: 100%;
+      border-radius: 0 0 24px 24px;
+    }
+  }
+
+  @media (max-width: $mobileL) {
+    .imgWrapper {
+      margin-bottom: 48px;
+    }
+  }
+}

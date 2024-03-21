@@ -1,0 +1,119 @@
+@import 'styles/variables';
+
+.component {
+  padding: 104px 0 111px;
+  position: relative;
+
+  @media screen and (max-width: $tablet) {
+    padding: 40px 0;
+  }
+
+  .title {
+    margin-bottom: 14px;
+    font-size: 35px;
+    line-height: 41px;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin-top: 24px;
+    color: white;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 8px;
+      font-size: 32px;
+      margin-top: 10px;
+      max-width: 280px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $laptop) {
+      font-size: 40px;
+      line-height: 48px;
+      margin-top: 48px;
+      margin-bottom: 24px;
+      width: 100%;
+    }
+  }
+
+  .card {
+    border-radius: 24px;
+    padding: 0;
+    background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $tablet) {
+      padding: 0;
+      flex-direction: column-reverse;
+      overflow: hidden;
+      gap: 0px;
+      align-items: center;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $laptop) {
+      gap: 24px;
+    }
+
+    .cardWrapper {
+      padding: 109px 0 0 48px;
+
+      @media screen and (max-width: $tablet) {
+        margin-left: 12px;
+        padding: 20px 12px 0 0;
+        text-align: center;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $laptop) {
+        padding: 20px 0 0 48px;
+
+        margin-left: 0;
+      }
+    }
+
+    .image {
+      border-radius: 24px;
+      box-shadow: 0px 6px 24px 0px rgba(1, 48, 154, 0.1);
+
+      @media screen and (max-width: $tablet) {
+        // Add specific styles for tablet if necessary
+      }
+    }
+  }
+
+  .subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    max-width: 533px;
+    @media screen and (max-width: $tablet) {
+      font-size: 16px;
+      text-align: center;
+      max-width: 280px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $laptop) {
+      width: 100%;
+    }
+  }
+
+  .buyButton {
+    width: 100%;
+    max-width: 350px;
+    color: red;
+    height: 50px;
+    color: #01268a;
+    margin-top: 40px;
+    background-color: #00ebb2;
+    border-radius: 16px;
+
+    @media screen and (max-width: $tablet) {
+      margin: 40px auto 24px;
+      max-width: 100%;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $laptop) {
+      margin: 40px auto 24px;
+    }
+  }
+}

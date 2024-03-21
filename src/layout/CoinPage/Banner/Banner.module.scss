@@ -1,0 +1,159 @@
+@import 'styles/variables';
+
+.component {
+  padding: 50px 0 70px;
+  color: #fff;
+
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.87px;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 32px;
+      line-height: 37px;
+      text-align: center;
+    }
+  }
+
+  .subtext {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 140%;
+
+    @media screen and (max-width: $tablet) {
+      margin: 32px auto;
+      font-size: 14px;
+      letter-spacing: 0;
+      text-align: left;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 20px;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $laptop) {
+      flex-direction: column;
+    }
+  }
+
+  .contentPart {
+    max-width: 700px;
+
+    @media screen and (max-width: $laptop) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+
+  .calculator {
+    max-width: 350px;
+  }
+
+  .textBlock {
+    padding-right: 30px;
+
+    @media screen and (max-width: $tablet) {
+      padding-right: 0;
+    }
+  }
+
+  .aboutVerge {
+    margin-bottom: 12px;
+  }
+
+  .coinInfo {
+    margin-bottom: 32px;
+    display: flex;
+    @media screen and (max-width: $tablet) {
+      justify-content: space-between;
+    }
+  }
+
+  .coinInfoBox {
+    margin-right: 100px;
+    @media screen and (max-width: $tablet) {
+      width: calc(33% - 10px);
+      margin-right: 10px;
+    }
+  }
+
+  .coinInfoTitle {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.87px;
+    color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (max-width: $tablet) {
+      font-size: 14px;
+    }
+  }
+
+  .coinInfoText {
+    font-size: 24px;
+    line-height: 28px;
+
+    @media screen and (max-width: $tablet) {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  .paymentMethods {
+    display: flex;
+
+    img {
+      margin-right: 30px;
+      width: 40px;
+      height: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: $tablet) {
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        margin-right: 0;
+        height: 27px;
+
+        &:first-child {
+          height: 22px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 32px 0;
+    :global {
+      .container {
+        max-width: 540px;
+      }
+    }
+  }
+}
+
+.doge {
+  color: #000;
+}
+
+.dogeCoinInfoTitle {
+  color: rgba(0, 0, 0, 0.6) !important;
+}

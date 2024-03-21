@@ -1,0 +1,66 @@
+@import 'styles/variables';
+
+.component {
+  .heading {
+    margin-top: 110px;
+    text-align: center;
+    @media screen and (max-width: $tablet) {
+      margin-top: 24px;
+    }
+  }
+
+  .first,
+  .second {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .image {
+      width: 100%;
+      max-width: 200px;
+    }
+    @media screen and (max-width: $tablet) {
+      flex-direction: column-reverse;
+      margin-top: 24px;
+      .image {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .second {
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  .text {
+    text-align: left;
+    max-width: 776px;
+    @media screen and (max-width: $tablet) {
+      text-align: justify;
+    }
+  }
+
+  .buttonContainer {
+    margin: 50px 0 80px 0;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: $tablet) {
+      margin: 24px 0;
+    }
+
+    .button {
+      background-color: #0bbc81;
+      color: white;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0;
+      text-align: center;
+      width: 100%;
+      max-width: 242px;
+    }
+  }
+}

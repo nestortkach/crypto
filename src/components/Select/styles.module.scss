@@ -1,0 +1,141 @@
+.label {
+  display: block;
+  composes: label from '../Input/Input.module.scss';
+}
+
+.wrapper {
+  position: relative;
+}
+
+.isOpen.wrapper {
+  z-index: 100;
+}
+
+.placeholder {
+  padding: 0 20px;
+  font-size: 14px;
+  color: #a4a3aa;
+}
+
+.select {
+  cursor: pointer;
+  composes: input from '../Input/Input.module.scss';
+  padding-right: 30px;
+  .item {
+    padding: 0;
+    max-width: 80%;
+  }
+  &.disabled {
+    pointer-events: none;
+  }
+}
+
+.caret {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  z-index: 1;
+}
+
+.list {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  sup {
+    display: inline !important;
+  }
+}
+
+.positionList {
+  border: 1px solid rgba(164, 163, 170, 0.2);
+  background: white;
+  position: absolute;
+  width: 100%;
+  margin-top: 4px;
+  z-index: 100;
+  border-radius: 2px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 11px;
+  img {
+    // border-radius: 50%;
+  }
+}
+
+.item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.select .item:hover {
+  background: none;
+}
+
+.itemInfo {
+  flex-direction: column;
+}
+
+.itemSubtitle,
+.itemTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  line-height: 18px;
+}
+
+.itemTitle {
+  color: #000;
+  font-size: 14px;
+  position: relative;
+}
+
+.emptyState {
+  text-align: center;
+  color: #a4a3aa;
+  margin: 40px 0;
+}
+
+.icon-arrow-down {
+  width: 1px;
+  height: 1px;
+  border: solid 5px transparent;
+  border-top-color: #000;
+  top: 4px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.icon-arrow-up {
+  width: 1px;
+  height: 1px;
+  border: solid 5px transparent;
+  border-bottom-color: #000;
+  top: -2px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.subItems {
+  margin-left: 2em;
+}
+
+.isActiveItem {
+  font-weight: 700;
+}
+
+.rounded {
+  border-radius: 50%;
+}

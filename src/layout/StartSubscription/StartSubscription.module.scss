@@ -1,0 +1,129 @@
+@import 'styles/variables';
+
+.component {
+  padding: 16px 0 88px;
+  position: relative;
+  counter-reset: listItem;
+
+  .maintitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0;
+    color: #01268a;
+
+    @media screen and (max-width: $tablet) {
+      text-align: start;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  }
+
+  .title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0;
+    margin-top: 16px;
+    color: #01268a;
+    text-align: start;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 14px;
+    }
+  }
+
+  .cardFlex {
+    display: flex;
+    gap: 32px;
+    margin-top: 10px;
+
+    @media screen and (max-width: $laptop) {
+      flex-direction: column;
+    }
+  }
+
+  .card {
+    background: #f3f9ff;
+    border-radius: 24px;
+    width: 100%;
+    padding: 48px 32px 32px;
+    position: relative;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) and (max-width: $laptop) {
+      text-align: left;
+    }
+
+    @media screen and (max-width: $tablet) {
+      padding: 24px;
+    }
+
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .stepNumber {
+      margin: -20px 0 0 -20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #d2e9ff;
+      color: #01268a;
+      border: 3px solid white;
+      padding: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 700;
+
+      @media screen and (max-width: $tablet) {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  .subtitle {
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .buyButton {
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    margin: 48px auto 0;
+    background: #00ebb2;
+    color: #01268a;
+  }
+
+  @media screen and (max-width: 1123px) {
+    .card {
+      padding: 28px 12px;
+    }
+
+    .title {
+      font-size: 18px;
+      line-height: 20px;
+      margin-top: 12px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

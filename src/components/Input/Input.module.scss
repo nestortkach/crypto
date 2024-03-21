@@ -1,0 +1,46 @@
+@import 'styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 12px;
+  color: $blue;
+  margin-bottom: 9px;
+}
+
+.input {
+  caret-color: $blue;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  padding-left: 11px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  height: 36px;
+  box-sizing: border-box;
+  color: $black;
+  border: 1px solid rgba($gray, 0.2);
+  border-radius: 4px;
+  position: relative;
+  outline: none;
+  transition: all 0.1s ease-in;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    font-weight: normal;
+    opacity: 1;
+    color: $gray;
+  }
+
+  &:focus {
+    border: 1px solid #4c9de8;
+    //box-shadow: 0px 2px 16px rgba(0, 57, 166, 0.08)
+    filter: drop-shadow(0 2px 16px rgba(0, 57, 166, 0.08));
+  }
+}

@@ -1,0 +1,51 @@
+@import 'styles/variables';
+
+.component {
+  padding: 32px 0 150px;
+  background-color: $light-gray;
+
+  .section {
+    margin-bottom: 32px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .sectionTitle {
+    color: #4c9de8;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
+  .footer {
+    padding: 40px 0;
+
+    .btn {
+      min-width: 230px;
+    }
+  }
+
+  :global {
+    .rc-collapse-item {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    :global {
+      .dynamic-content {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

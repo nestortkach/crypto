@@ -1,0 +1,148 @@
+@import 'styles/variables';
+
+.section {
+  background-color: rgba(250, 250, 250, 1);
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: $tablet) {
+    margin-top: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.integrateUsWrapper {
+  max-width: 1440px;
+}
+
+.integrateUsSection {
+  margin: 0 48px;
+  //   background: red;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 48px;
+  padding: 64px 0;
+  position: relative;
+
+  @media screen and (max-width: $laptop) {
+    margin: 0 24px;
+    // background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  }
+
+  @media screen and (max-width: $tablet) {
+    border-radius: 16px;
+    margin: 0 16px;
+    padding: 0;
+  }
+}
+
+.container {
+  max-width: 1290px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+  @media screen and (max-width: $tablet) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // gap: 148px;
+}
+
+.heading {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  @media screen and (max-width: $tablet) {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: #212121;
+  }
+}
+
+.subheading {
+  margin-top: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  max-width: 640px;
+  @media screen and (max-width: $tablet) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #212121;
+  }
+}
+
+.appWord {
+  background: linear-gradient(252.44deg, #3140ef 100%, #0042b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.boxes {
+  margin-top: 64px;
+  display: flex;
+  gap: 32px;
+  @media screen and (max-width: $tablet) {
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .box {
+    border: 2px solid #3140ef;
+    border-radius: 5px;
+    padding: 32px 32px;
+    background-color: white;
+    width: 33.3%;
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
+
+    .boxInfo {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      h3 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        @media screen and (max-width: $tablet) {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 150%;
+          color: #212121;
+        }
+      }
+    }
+    .boxSubTitle {
+      margin-top: 16px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+}

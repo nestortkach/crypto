@@ -1,0 +1,42 @@
+@import "styles/variables";
+
+.title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.87px;
+  color: #01268a;
+  margin-bottom: 24px;
+
+  @media (max-width: $tablet) {
+    font-size: 32px;
+  }
+}
+
+.btn {
+  max-width: 100px;
+  min-width: unset;
+}
+
+.btnItems {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.infoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 12px;
+  column-gap: 80px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.popover {
+  left: 0;
+  top: 120%;
+  color: $black;
+}

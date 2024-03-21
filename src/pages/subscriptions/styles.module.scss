@@ -1,0 +1,7 @@
+@import "styles/variables";
+
+.calculator {
+  background: rgba(0, 0, 0, 0.08) !important;
+  backdrop-filter: blur(35px) !important;
+  max-width: 376px !important;
+}

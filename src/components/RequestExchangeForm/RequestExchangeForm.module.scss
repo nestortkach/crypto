@@ -1,0 +1,24 @@
+@import 'styles/variables';
+
+.component {
+  width: 530px;
+
+  .submit {
+    display: block;
+    width: 100%;
+  }
+
+  .terms {
+    align-items: flex-start;
+  }
+
+  :global {
+    .checkbox {
+      margin-top: 4px;
+    }
+  }
+
+  @media all and (max-width: $tablet) {
+    width: 100%;
+  }
+}

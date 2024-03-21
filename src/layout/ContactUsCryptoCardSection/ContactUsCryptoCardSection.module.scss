@@ -1,0 +1,96 @@
+@import "styles/variables.scss";
+.container {
+  margin: 0 48px;
+  background: #f3f9ff;
+  border-radius: 48px;
+  padding: 80px 0;
+  position: relative;
+
+  @media screen and (max-width: $laptop) {
+    margin: 0 24px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    border-radius: 16px;
+    margin: 0 16px;
+    padding: 24px 0;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  color: #00000080;
+}
+
+.input {
+  background: #fff;
+  border: 1px solid #d7eafc;
+  box-shadow: 0px 2px 16px rgba(0, 57, 166, 0.08);
+  max-height: 182px;
+}
+
+.error {
+  background: #fff;
+  border: 1px solid $red;
+  box-shadow: 0px 2px 16px rgba(0, 57, 166, 0.08);
+}
+
+.contactForm {
+  display: flex;
+  padding-top: 40px;
+  gap: 32px;
+
+  @media screen and (max-width: $tablet) {
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+
+.button {
+  background: #04c697;
+  margin-top: 8px;
+  color: white;
+  padding: 18px;
+}
+
+.row {
+  flex-direction: column;
+}
+
+.flexContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  border: 1px solid rgba($blue, 0.2);
+  background: #fff;
+}
+
+.checkboxRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+  gap: 16px;
+
+  & > label {
+    flex: 1;
+  }
+}
+
+.label {
+  font-size: 12px;
+  line-height: 12px;
+  color: $blue;
+  margin-bottom: 9px;
+}

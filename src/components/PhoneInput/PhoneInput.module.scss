@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+.input {
+  composes: input from '../Input/Input.module.scss';
+  width: 100% !important;
+  padding-left: 60px !important;
+  border: 1px solid rgba($gray, 0.2) !important;
+
+  & + .button {
+    border: 1px solid rgba($gray, 0.2) !important;
+  }
+
+  &:focus {
+    border: 1px solid $blue !important;
+
+    & + .button {
+      border: 1px solid $blue !important;
+      border-right: none !important;
+    }
+  }
+
+  &_valid:not(:focus) {
+    background-color: rgba($blue, 0.06) !important;
+    border: none;
+
+    & + .button {
+      background-color: rgba($blue, 0.1);
+    }
+  }
+
+  :global {
+    .form-control {
+      height: 36px;
+    }
+
+    .react-tel-input {
+      font-size: 36px;
+    }
+  }
+}
+
+.button {
+  :global {
+    .arrow {
+      left: 22px;
+    }
+    .selected-flag {
+      width: 47px;
+      padding-right: 8px;
+      .arrow {
+        left: 25px;
+      }
+    }
+  }
+}
+
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  composes: label from '../Input/Input.module.scss';
+}

@@ -1,0 +1,52 @@
+@import 'styles/variables';
+
+.component {
+  padding-top: 25px;
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: normal;
+
+  a {
+    color: $blue;
+    text-decoration: underline;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.col {
+  padding: 0 15px;
+  flex-shrink: 0;
+}
+
+.col6 {
+  width: 50%;
+}
+
+.col12 {
+  width: 100%;
+}
+
+@media screen and (max-width: $tablet) {
+  .row {
+    margin-bottom: 0;
+
+    &:last-child {
+      .col {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .col {
+    width: 100%;
+    padding-bottom: 18px;
+  }
+}

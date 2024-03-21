@@ -1,0 +1,1 @@
+export { HowToBuyVerge } from './HowToBuyVerge';

@@ -1,0 +1,170 @@
+@import "styles/variables";
+
+.label {
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  color: $blue;
+  margin-bottom: 9px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.isOpen.wrapper {
+  z-index: 100;
+}
+
+.placeholder {
+  padding: 0 20px;
+  font-size: 14px;
+  color: #a4a3aa;
+}
+
+.select {
+  cursor: pointer;
+  caret-color: $blue;
+  padding: 8px 30px 5px 11px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  height: 36px;
+  box-sizing: border-box;
+  color: $black;
+  border: 1px solid rgba($gray, 0.2);
+  border-radius: 4px;
+  position: relative;
+  outline: none;
+  transition: all 0.1s ease-in;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    font-weight: normal;
+    opacity: 1;
+    color: $gray;
+  }
+
+  &:focus {
+    border: 1px solid #4c9de8;
+    //box-shadow: 0px 2px 16px rgba(0, 57, 166, 0.08)
+    filter: drop-shadow(0 2px 16px rgba(0, 57, 166, 0.08));
+  }
+
+  .item {
+    padding: 0;
+    max-width: 80%;
+  }
+  &.disabled {
+    pointer-events: none;
+  }
+}
+
+.caret {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  z-index: 1;
+}
+
+.list {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  sup {
+    display: inline !important;
+  }
+}
+
+.positionList {
+  border: 1px solid rgba(164, 163, 170, 0.2);
+  background: white;
+  position: absolute;
+  width: 100%;
+  margin-top: 4px;
+  z-index: 100;
+  border-radius: 2px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 11px;
+}
+
+.item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.select .item:hover {
+  background: none;
+}
+
+.itemInfo {
+  flex-direction: column;
+}
+
+.itemSubtitle,
+.itemTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  line-height: 18px;
+}
+
+.itemTitle {
+  color: #000;
+  font-size: 14px;
+  position: relative;
+}
+
+.emptyState {
+  text-align: center;
+  color: #a4a3aa;
+  margin: 40px 0;
+}
+
+.icon-arrow-down {
+  width: 1px;
+  height: 1px;
+  border: solid 5px transparent;
+  border-top-color: #000;
+  top: 4px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.icon-arrow-up {
+  width: 1px;
+  height: 1px;
+  border: solid 5px transparent;
+  border-bottom-color: #000;
+  top: -2px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.subItems {
+  margin-left: 2em;
+}
+
+.isActiveItem {
+  font-weight: 700;
+}
+
+.rounded {
+  border-radius: 50%;
+}

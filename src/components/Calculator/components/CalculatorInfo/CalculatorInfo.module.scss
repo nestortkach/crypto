@@ -1,0 +1,376 @@
+@import "styles/variables";
+
+.info {
+  width: 100%;
+  padding: 5px 0 5px 4px;
+
+  .infoRow {
+    display: flex;
+    align-items: center;
+    padding: 9px 0 9px 15px;
+    position: relative;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    &:last-child .circle::after,
+    &:first-child .circle::before {
+      height: 15px;
+
+      @media screen and (max-width: $tablet) {
+        height: 12px;
+      }
+    }
+
+    & > * {
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    @media screen and (max-width: $tablet) {
+      padding: 6px 0;
+    }
+  }
+
+  .amount {
+    padding-right: 15px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .amountWidget {
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--infoFeesColor);
+  }
+
+  .infoTitle {
+    width: 141px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: 300;
+    font-size: 13px;
+    color: $very-light-blue;
+  }
+
+  .infoTitleWidget {
+    width: 141px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: 300;
+    font-size: 13px;
+    color: #797979;
+  }
+
+  .dot {
+    position: relative;
+    margin-right: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1a88ee;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 2px;
+      height: 16px;
+      background-color: #1a88ee;
+
+      @media screen and (max-width: $tablet) {
+        height: 12px;
+      }
+    }
+  }
+
+  .popoverLink {
+    color: #b3c2e2;
+    text-decoration: underline;
+    font-size: 11px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .tooltipStyle {
+    opacity: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    border-radius: 3px !important;
+  }
+
+  .circle {
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #1a88ee;
+    background-color: #1a88ee;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 2px;
+      height: 16px;
+      background-color: #1a88ee;
+
+      @media screen and (max-width: $tablet) {
+        height: 12px;
+      }
+    }
+
+    &::before {
+      top: -1px;
+      transform: translate(-50%, -100%);
+    }
+
+    &::after {
+      bottom: -1px;
+      transform: translate(-50%, 100%);
+    }
+  }
+
+  .popoverBox {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    position: static;
+  }
+
+  .popover {
+    width: 265px;
+    // padding: 10px;
+    // top: -70px;
+    // left: 9px;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0;
+    white-space: normal;
+    border: none;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: $black;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 16px;
+      color: $blue;
+    }
+
+    svg {
+      width: 10px;
+      height: 10px;
+
+      & > path {
+        fill: $gray;
+      }
+    }
+
+    button {
+      top: 16px;
+      right: 16px;
+      padding: 0;
+      display: none;
+
+      @media all and (max-width: $tablet) {
+        display: block;
+      }
+    }
+
+    @media all and (max-width: $tablet) {
+      top: -68px;
+    }
+  }
+
+  .popoverMedium {
+    width: 287px;
+    top: -50px;
+    left: -2px;
+  }
+
+  .loader {
+    width: 13px;
+    height: 13px;
+    margin-top: 2px;
+
+    &::after {
+      width: 10px;
+      height: 10px;
+      border-width: 1px;
+      border-color: #fff #fff #fff transparent;
+    }
+  }
+
+  .fees {
+    margin-bottom: 8px;
+    background-color: #ecf6ff;
+    border-radius: 12px;
+  }
+
+  .fee {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.68);
+    border-bottom: 1px solid $very-light-blue;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .feeValue {
+    color: #003a72;
+  }
+
+  .feeText {
+    padding-top: 8px;
+  }
+}
+
+.tooltipPrompt {
+  border-radius: 8px !important;
+  opacity: 1 !important;
+  padding: 15px !important;
+}
+
+.tooltipText {
+  padding-bottom: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.expectedRateLabel {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-bottom: 8px;
+    font-weight: 500;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .rate {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  svg {
+    margin-left: 5px;
+
+    path {
+      fill: $very-light-blue;
+    }
+  }
+}
+
+.expectedRateLabelWidget {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-bottom: 8px;
+    font-weight: 500;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .rate {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  svg {
+    margin-left: 5px;
+
+    path {
+      fill: #abd5fd;
+    }
+  }
+}
+
+.dotsLoader {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 25px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--primary);
+  animation: dotFlashing 0.5s infinite linear alternate;
+  animation-delay: 0.25s;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -16px;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--primary);
+    animation: dotFlashing 0.5s infinite alternate;
+    animation-delay: 0s;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 8px);
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--primary);
+    animation: dotFlashing 0.5s infinite alternate;
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: var(--primary);
+  }
+  50%,
+  100% {
+    background-color: #dae9ff;
+  }
+}

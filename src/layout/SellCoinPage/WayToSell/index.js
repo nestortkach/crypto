@@ -1,0 +1,1 @@
+export { WayToSell } from './WayToSell';

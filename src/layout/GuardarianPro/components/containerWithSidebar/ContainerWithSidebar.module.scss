@@ -1,0 +1,62 @@
+@import "styles/variables";
+
+.container {
+  display: flex;
+  gap: 48px;
+
+  .sidebarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    min-width: 220px;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid $very-light-blue;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+
+    .elem {
+      width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      min-width: 170px;
+    }
+
+    @media (max-width: $laptop) {
+      display: none;
+    }
+  }
+
+  .sidebarLink {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    gap: 12px;
+    background: $white;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $blue;
+  }
+
+  .active {
+    background: #e3f2ff;
+    color: $dark-dark-blue;
+  }
+
+  .divider {
+    width: 100%;
+    margin: 16px 0;
+    border: 1px solid $very-light-blue;
+  }
+
+  @media (max-width: 1200px) {
+    gap: 24px;
+  }
+}

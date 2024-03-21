@@ -1,0 +1,1 @@
+export { InvestBanner } from './InvestBanner';

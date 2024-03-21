@@ -1,0 +1,242 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 24px;
+  padding: 5px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.87px;
+  color: #fff;
+  &:last-child {
+    .dropdownContentDarkIntegrateUs {
+      &::before {
+        height: 0
+      }
+    }
+  }
+
+  .dropdownContent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      transition: transform 0.35s, opacity 0.35s;
+      transform: scaleX(0.5);
+      opacity: 0;
+    }
+    &:hover {
+      &::before {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+  }
+
+  .dropdownContentDark {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #01268a;
+      transition: transform 0.35s, opacity 0.35s;
+      transform: scaleX(0.5);
+      opacity: 0;
+    }
+    &:hover {
+      &::before {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+  }
+
+  .dropdownContentDarkIntegrateUs {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: 500;
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #01268a;
+      transition: transform 0.35s, opacity 0.35s;
+      transform: scaleX(0.5);
+      opacity: 0;
+    }
+    &:hover {
+      &::before {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+  }
+
+  .dropdownMenu {
+    padding: 10px 0;
+    &::before {
+      position: absolute;
+      background: linear-gradient(249.18deg, #3140ef -78.73%, #0042b8 100%), #212121;
+      content: ' ';
+      top: 0;
+      padding: 5px 0;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      width: 100%;
+    }
+
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 35px 61px rgba(1, 48, 154, 0.1);
+    border-radius: 12px;
+
+    a,
+    .styledLink {
+      color: rgba(33, 33, 33, 1);
+      text-align: left;
+      white-space: nowrap;
+      padding: 10px 20px 9px 25px;
+      font-weight: 500;
+      font-size: 14px;
+      margin-left: 0 !important;
+      line-height: 24px;
+      &::before {
+        position: absolute;
+        display: none;
+        content: '';
+        opacity: 1;
+        margin: 0 auto;
+        height: 2px;
+        width: 90%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: unset;
+        transform: unset;
+        background: rgba(170, 218, 250, 0.4);
+      }
+      &:hover {
+        background: #fafafa;
+        &::before {
+          transform: unset;
+          opacity: unset;
+        }
+      }
+    }
+
+    .styledLinkButton {
+      background: linear-gradient(249.18deg, #3140ef -78.73%, #0042b8 100%), #212121;
+      color: white;
+      padding: 6px 27.5px;
+      line-height: 24px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logout {
+      color: #f32249;
+
+      &:hover {
+        background: rgba(243, 34, 73, 0.05);
+
+        &::before {
+          transform: unset;
+          opacity: unset;
+        }
+      }
+    }
+
+    top: 2.5em;
+    z-index: 101;
+    min-width: 130px;
+    width: 100%;
+    max-width: 250px;
+    &.active {
+      display: flex;
+      width: auto;
+    }
+    &.alignRight {
+      right: 0;
+    }
+  }
+}
+
+.isWhite {
+  color: rgba(33, 33, 33, 1);
+}
+
+.isDark {
+  color: #01268a;
+}
+.newImage {
+  width: 60px;
+  height: 19px;
+  position: absolute;
+  margin-top: -2px;
+  padding: 0 7px;
+}
+.loginLink {
+  cursor: pointer;
+  border-radius: 5px;
+  transition: box-shadow 0.2s ease-in-out;
+
+  .cabinetImage {
+    vertical-align: text-bottom;
+  }
+
+  a {
+    margin: 0;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 10%);
+  }
+}
+
+.loginLinkAuth {
+  border: 2px solid rgba(49, 64, 239, 1);
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease-in-out;
+
+  .cabinetImage {
+    vertical-align: text-bottom;
+  }
+
+  a {
+    margin: 0;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 10%);
+  }
+}

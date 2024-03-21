@@ -1,0 +1,245 @@
+@import '../../styles/variables';
+
+.smsCode {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  width: 100%;
+  height: 60px;
+  padding: 10px 14px 10px 17px;
+  border-radius: 8px;
+
+  @media all and (max-width: $tablet) {
+    padding-left: 15px;
+  }
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 8px;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.labelText {
+  position: absolute;
+  top: 50%;
+
+  transition: all 0.25s ease-in-out;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+  color: $gray;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  &_visible {
+    transform: translateY(calc(-50% - 13px));
+
+    color: var(--combinedInputLabelColor);
+
+    font-size: 12px;
+    line-height: 16px;
+
+    & + .input {
+      padding-top: 19px;
+    }
+  }
+
+  &_error {
+    color: var(--error);
+  }
+}
+
+.changeNumber {
+  height: 32px;
+  margin-right: 4px;
+  padding-right: 12px;
+  padding-left: 12px;
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  color: $blue;
+  border: 1px solid $blue;
+  border-radius: 4px;
+  outline: none;
+  background: none;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  @media all and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.resendCode {
+  display: flex;
+  align-items: center;
+
+  height: 32px;
+  padding-right: 8px;
+  padding-left: 10px;
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background: none;
+  background-color: var(--combinedInputLabelColor);
+
+  &:hover {
+    background-color: #2a8ae3;
+  }
+
+  &_disabled {
+    cursor: not-allowed;
+
+    background: var(--popupIconColor);
+    & > span {
+      color: $gray;
+    }
+
+    &:hover {
+      background: var(--popupIconColor);
+    }
+
+    .refresh {
+      background-image: url('./refresh-disabled.svg');
+    }
+  }
+}
+
+.resendText {
+  color: $white;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.refresh {
+  display: inline-block;
+
+  width: 12px;
+  height: 14px;
+  margin-right: 6px;
+
+  background-image: url('./refresh.svg');
+}
+
+.input {
+  width: 105px;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  line-height: 21px;
+
+  &_success {
+    pointer-events: none;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.lock {
+  width: 21px;
+  min-width: 21px;
+  height: 26px;
+  margin-right: 17px;
+
+  @media all and (max-width: $tablet) {
+    margin-right: 10px;
+  }
+}
+
+.status {
+  width: 17px;
+  height: 17px;
+  margin-right: 3px;
+
+  background-repeat: no-repeat;
+
+  &_success {
+    animation: pulse 0.2s ease-in-out;
+
+    background-image: url('./checkmark.svg');
+  }
+
+  &_error {
+    animation: pulse 0.2s ease-in-out;
+
+    background-image: url('./error.svg');
+    background-size: contain;
+  }
+
+  &_loading {
+    animation: pulse 0.2s ease-in-out, rotating 0.8s linear infinite;
+
+    border-top: 3px solid var(--combinedInputLabelColor);
+    border-right: 3px solid transparent;
+    border-radius: 50%;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+}
+
+.statusWrapper {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+}
+
+.statusText {
+  margin-right: 10px;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  &_error {
+    color: var(--error);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

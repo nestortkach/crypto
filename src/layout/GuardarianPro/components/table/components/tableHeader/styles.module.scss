@@ -1,0 +1,12 @@
+.titleRow {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  font-weight: 700;
+}
+
+.cell {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

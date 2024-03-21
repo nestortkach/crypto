@@ -1,0 +1,353 @@
+@import "variables";
+@import "../../node_modules/rc-collapse/assets/index.css";
+
+html,
+body {
+  scroll-behavior: smooth;
+  color: $black;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.success {
+  color: $green;
+}
+
+.error {
+  color: $red;
+}
+
+.primary {
+  color: $blue;
+}
+
+.container {
+  max-width: 1290px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1290px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media screen and (max-width: $laptop) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.btn-group {
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-flex;
+}
+
+.svgIcon {
+  fill: currentColor;
+  margin-right: 8px;
+}
+
+.rc-collapse {
+  border: none;
+  background-color: transparent;
+
+  & > .rc-collapse-item {
+    background: #fff;
+    border: 1px solid #d7eafc;
+    box-sizing: border-box;
+    box-shadow: 0 2px 16px rgba(0, 57, 166, 0.08);
+    border-radius: 8px;
+
+    .rc-collapse-header {
+      position: relative;
+      padding: 24px 80px 24px 24px;
+      color: #000;
+      outline: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        display: block;
+        width: 60px;
+        height: 40px;
+        transform: translateY(-50%);
+        border-left: 2px solid rgba(#1b2125, 0.1);
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        width: 19px;
+        height: 12px;
+        background: url("/chevrone-down.svg") center no-repeat;
+        background-size: 100%;
+        transform-origin: 50% 50%;
+        transform: translateY(-50%);
+        transition: 0.4s;
+      }
+    }
+
+    &.rc-collapse-item-active {
+      & > .rc-collapse-header::after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  &-content {
+    color: #000;
+  }
+
+  .rc-collapse-content-box {
+    margin: 0;
+  }
+
+  .rc-collapse-content {
+    padding: 0 65px 16px 24px;
+  }
+}
+
+.article-page {
+  & > * {
+    margin-bottom: 24px;
+    line-height: 20px;
+    overflow: auto;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .btn-width-fixed {
+    min-width: 220px;
+  }
+}
+
+.content-with-marker {
+  ul {
+    padding-left: 24px;
+    list-style: none;
+    li {
+      position: relative;
+      margin-bottom: 16px;
+      padding-left: 14px;
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+.content-with-checkmark {
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      position: relative;
+      padding-left: 24px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 14px;
+        height: 20px;
+        background: url("/blue-check.svg") center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.dynamic-content {
+  p {
+    margin-bottom: 12px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .rc-collapse {
+    & > .rc-collapse-item {
+      & > .rc-collapse-header {
+        position: relative;
+        padding: 12px 50px 12px 12px;
+
+        &::before {
+          width: 40px;
+          height: 24px;
+        }
+
+        &::after {
+          width: 12px;
+          right: 15px;
+        }
+      }
+    }
+
+    .rc-collapse-content {
+      padding: 0 45px 12px 12px;
+    }
+  }
+}
+
+.popup {
+  width: 365px;
+  padding: 25px;
+  border-radius: 8px;
+  align-self: center !important;
+}
+
+.closePopup {
+  top: 32px !important;
+  right: 30px !important;
+  width: 15px !important;
+  height: 15px !important;
+  padding: 0;
+  color: #939295 !important;
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  &:hover {
+    color: $blue !important;
+  }
+}
+
+svg[name="'arrow-left'"],
+svg[name="'arrow-right'"] {
+  cursor: pointer !important;
+}
+
+/* Scrollbars for Calculator Select component */
+
+.os-scrollbar-handle {
+  width: 8px !important;
+  cursor: pointer !important;
+  background-color: #4c9de8 !important;
+  opacity: 0.7;
+}
+
+.os-scrollbar-vertical {
+  padding: 8px !important;
+  width: 24px !important;
+  background-color: #eff6fc !important;
+  pointer-events: auto !important;
+}
+
+/* DatePicker */
+
+.react-datepicker {
+  border: 1px solid rgba(164, 163, 170, 0.2) !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.09) !important;
+}
+
+.react-datepicker__header {
+  border-bottom: 1px solid $very-light-blue !important;
+  background-color: $white !important;
+  border-top-left-radius: 8px !important;
+}
+
+.react-datepicker__time-container {
+  border-left: 1px solid $very-light-blue !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: $blue !important;
+  font-weight: 700;
+}
+
+.react-datepicker__day:hover {
+  background-color: rgba($blue, 0.5) !important;
+  color: #fff;
+}
+
+.react-datepicker__day:focus {
+  outline: none !important;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: $blue !important;
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: rgba($blue, 0.5) !important;
+  color: #fff;
+}
+
+.react-datepicker__time-list {
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $blue;
+    border-radius: 100px;
+  }
+}
+
+.integrate-page {
+  background: #f6f4f8;
+  min-height: 100vh;
+}

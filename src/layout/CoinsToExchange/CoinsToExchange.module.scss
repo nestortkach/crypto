@@ -1,0 +1,60 @@
+@import 'styles/variables';
+
+.CoinsToExchange {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: $laptop) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.title {
+  text-align: left;
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+  }
+}
+.content {
+  margin-left: 60px;
+  @media screen and (max-width: $tablet) {
+    margin-left: 0;
+  }
+}
+
+.image {
+  @media screen and (max-width: $mobileL) {
+    width: 100%;
+  }
+}
+
+.body {
+  margin-top: 24px;
+  text-align: justify;
+}
+
+.button {
+  cursor: pointer;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background: var(--buttonBackground);
+  box-shadow: 0 2px 16px 0 #0039a614;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 14px 57px;
+  border-radius: 8px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

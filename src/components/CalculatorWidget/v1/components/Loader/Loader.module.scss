@@ -1,0 +1,32 @@
+.loader {
+  &::after {
+    content: ' ';
+    display: block;
+    border-radius: 50%;
+    border-style: solid;
+    animation: loader 1.2s linear infinite;
+  }
+}
+
+.default {
+  width: 19px;
+  height: 19px;
+  margin-top: 2px;
+  display: block;
+
+  &::after {
+    width: 15px;
+    height: 15px;
+    border-width: 1px;
+    border-color: #000 #000 #000 transparent;
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

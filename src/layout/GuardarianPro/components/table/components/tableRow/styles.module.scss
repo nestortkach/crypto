@@ -1,0 +1,11 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+
+  &:nth-child(2n) {
+    border-radius: 8px;
+    background: #fff;
+  }
+}

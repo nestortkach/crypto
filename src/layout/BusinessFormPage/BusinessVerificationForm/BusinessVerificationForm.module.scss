@@ -1,0 +1,273 @@
+@import 'styles/variables';
+
+.component {
+  padding: 76px 0;
+  background-color: #f6f4f8;
+  font-size: 20px;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    padding: 27px 24px;
+    box-shadow: 0 2px 16px 0 rgba(0, 57, 166, 0.08);
+    border: 1px solid #d7eafc;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .hasError {
+    border-color: rgba(243, 34, 73, 0.5);
+
+    .label {
+      color: #f32249;
+      margin-bottom: 0;
+    }
+  }
+
+  .error {
+    display: flex;
+    align-items: center;
+    color: rgba(243, 34, 73, 0.5);
+    margin-left: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url('/attention.svg') center no-repeat;
+      background-size: 100%;
+      margin-left: 25px;
+    }
+  }
+
+  .label {
+    color: #4c9de8;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .input {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    height: 20px;
+    border: none;
+    font-size: inherit;
+
+    &::placeholder {
+      color: #a4a3aa;
+      opacity: 1;
+      font-size: inherit;
+    }
+
+    &:focus {
+      border: none;
+      filter: none;
+    }
+  }
+
+  :global {
+    .checkbox {
+      width: 20px;
+      height: 20px;
+    }
+
+    .radio {
+      margin-bottom: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .select-country_item {
+      padding: 11px 16px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      max-width: 100%;
+
+      img {
+        margin-right: 30px;
+        width: 24px;
+        flex-shrink: 0;
+        height: auto;
+      }
+    }
+
+    .country-select {
+      .select {
+        .select-country_item {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      .select_drop-menu {
+        margin: 0;
+        top: 0;
+      }
+    }
+
+    .select_drop-menu {
+      border: 1px solid rgba(215, 234, 252, 1);
+      border-radius: 8px;
+      box-shadow: 0 2px 16px 0 rgba(0, 57, 166, 0.08);
+      overflow: hidden;
+      font-size: 16px;
+
+      input {
+        display: block;
+        width: 100%;
+        border: none;
+        line-height: 1;
+        outline: none;
+        padding: 20px 20px 20px 45px;
+
+        &::placeholder {
+          color: #adadad;
+        }
+      }
+    }
+
+    .search-wrapper {
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url('/calculator/search.svg') center no-repeat;
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: 100%;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        left: 10px;
+        right: 10px;
+        background-color: #d7eafc;
+        z-index: 1;
+      }
+    }
+
+    .select-placeholder {
+      font-size: inherit;
+      padding-left: 0;
+    }
+
+    .select_item-text {
+      padding: 5px;
+    }
+
+    .select-wrap {
+      max-width: 360px;
+    }
+
+    .select {
+      border: none;
+      height: auto;
+      padding-left: 45px;
+      padding-right: 15px;
+      font-size: inherit;
+
+      &::before {
+        right: auto;
+        left: 0;
+        width: 25px;
+        height: 12px;
+        background-size: 32px;
+      }
+
+      .select_item-text {
+        font-size: inherit;
+      }
+    }
+  }
+
+  .terms {
+    display: inline-block;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 25px;
+
+    a {
+      color: #4c9de8;
+      text-decoration: underline;
+      font-size: inherit;
+    }
+  }
+
+  .footer {
+    .footer_item {
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .submit {
+      max-width: 366px;
+      width: 100%;
+      padding: 18px 32px;
+      height: auto;
+      font-size: inherit;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 32px 0;
+
+    .item {
+      margin-bottom: 24px;
+    }
+
+    .footer_item {
+      margin-bottom: 24px;
+    }
+
+    .error {
+      order: 2;
+      padding-bottom: 0;
+      padding-top: 0;
+      margin: 32px auto 0;
+    }
+
+    .hasError {
+      .label {
+        margin-bottom: 26px;
+      }
+    }
+
+    .footer {
+      .submit {
+        max-width: none;
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+    :global {
+      .select-country_item {
+        img {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

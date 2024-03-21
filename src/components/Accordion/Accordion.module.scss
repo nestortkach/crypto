@@ -1,0 +1,13 @@
+@import 'styles/variables';
+
+.component {
+  .accordionTitle {
+    line-height: 1;
+  }
+
+  @media screen and (max-width: $tablet) {
+    .accordionTitle {
+      font-size: 16px;
+    }
+  }
+}

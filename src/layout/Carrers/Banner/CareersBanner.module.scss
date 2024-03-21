@@ -1,0 +1,59 @@
+@import 'styles/variables';
+
+.component {
+  padding: 0;
+  overflow: hidden;
+  .content {
+    position: relative;
+    width: 50%;
+    max-width: 480px;
+    min-height: 370px;
+    padding: 70px 0 90px;
+  }
+
+  .heading {
+    line-height: 42px;
+    margin-bottom: 35px;
+  }
+
+  .subText {
+    margin-bottom: 55px;
+  }
+
+  .imgWrap {
+    position: absolute;
+    top: 50%;
+    max-width: 335px;
+    right: -22%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    transform: translate(100%, -50%);
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    .content {
+      padding: 32px 0;
+      text-align: center;
+      max-width: none;
+      width: 100%;
+    }
+    .imgWrap {
+      position: relative;
+      top: auto;
+      right: auto;
+      transform: none;
+      max-width: 250px;
+      margin: 0 auto 55px;
+    }
+    .heading {
+      text-align: left;
+    }
+  }
+}

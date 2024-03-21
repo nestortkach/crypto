@@ -1,0 +1,167 @@
+@import 'styles/variables';
+
+.section {
+  padding: 80px 100px 98px;
+  max-width: 1290px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1290px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media screen and (max-width: $laptop) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 32px 16px 35px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: 0.87px;
+    color: #01268a;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+  }
+
+  .steps {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    justify-content: space-between;
+
+    @media screen and (max-width: $laptop) {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  .step {
+    background: #f3f9ff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    backdrop-filter: blur(50px);
+    border-radius: 24px;
+    padding: 32px;
+    gap: 24px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .stepImg {
+      width: 64px;
+      height: 64px;
+
+      @media screen and (max-width: $tablet) {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .stepTitle {
+      font-weight: 700;
+      font-size: 24px;
+      color: #01268a;
+
+      @media screen and (max-width: $tablet) {
+        font-size: 16px;
+      }
+    }
+
+    .stepText {
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.3;
+
+      @media screen and (max-width: $tablet) {
+        font-size: 12px;
+      }
+    }
+
+    .stepTextContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      @media screen and (max-width: $tablet) {
+        gap: 8px;
+      }
+    }
+
+    &:last-of-type {
+      background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+
+      .stepTitle {
+        color: #fff;
+      }
+
+      .stepText {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    @media screen and (max-width: $laptop) {
+      flex-direction: row;
+      padding: 24px;
+    }
+
+    @media (max-width: $tablet) {
+      border-radius: 16px;
+      align-items: center;
+    }
+  }
+}
+
+.action {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+
+  a {
+    background-color: #00ebb2;
+    width: 100%;
+    box-shadow: 0 2px 16px 0 #0039a614;
+    color: white;
+    text-align: center;
+    padding: 18px 0px;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 2px 24px rgba(0, 57, 166, 0.18);
+      transform: scale(1.05);
+    }
+
+    span {
+      background: linear-gradient(90deg, #0042b8 -50%, #000756 158.95%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin-top: 12px;
+  }
+}

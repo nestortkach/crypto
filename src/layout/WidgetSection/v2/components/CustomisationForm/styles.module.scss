@@ -1,0 +1,82 @@
+@import "styles/variables";
+
+.customizeTypes {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  align-items: flex-end;
+
+  & > div {
+    flex: 1;
+  }
+
+  @media screen and (max-width: $tablet) {
+    align-items: unset;
+    flex-direction: column;
+  }
+}
+
+.customizePartnerUrl {
+  flex-wrap: wrap;
+
+  & > div {
+    width: 100%;
+    min-width: 200px;
+  }
+}
+
+.navBtns {
+  display: flex;
+  padding: 4px;
+  background: rgba(1, 38, 138, 0.06);
+  border-radius: 8px;
+}
+
+.navBtn {
+  width: 50%;
+  min-width: 50px;
+  height: 32px;
+  text-align: center;
+  padding: 0;
+  color: $black;
+}
+
+.subTitle {
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $black;
+}
+
+.inputContainer {
+  background: #ffffff;
+  border: 1px solid var(--popupIconColor);
+  box-shadow: 0px 2px 16px rgba(0, 57, 166, 0.08);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media all and (max-width: $mobileL) {
+    margin-bottom: 12px;
+  }
+}
+
+.multiSelectContainer {
+  background: #ffffff;
+  border: 1px solid var(--popupIconColor);
+  box-shadow: 0px 2px 16px rgba(0, 57, 166, 0.08);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(/chevrone-down.svg);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+
+  @media all and (max-width: $mobileL) {
+    margin-bottom: 12px;
+  }
+}

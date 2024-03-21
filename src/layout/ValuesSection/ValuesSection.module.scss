@@ -1,0 +1,113 @@
+@import 'styles/variables';
+
+.section {
+  padding: 40px 0;
+  background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  text-align: center;
+  color: #fff;
+
+  .title {
+    margin-bottom: 54px;
+  }
+
+  .stepper {
+    display: flex;
+
+    .step {
+      position: relative;
+      width: 33%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      flex-direction: column;
+      padding: 0 30px 16px;
+
+      &::before {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 10px;
+        content: '';
+        width: 75px;
+        height: 105px;
+        background: url('/hexa.svg') no-repeat;
+        background-size: auto 100%;
+      }
+    }
+
+    .number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 37px;
+      height: 37px;
+      font-size: 32px;
+      line-height: 1;
+      font-family: Roboto, sans-serif;
+      font-weight: 900;
+      background-color: #fff;
+      color: #0034a0;
+      border-radius: 50%;
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+
+    .title {
+      margin-bottom: 0;
+    }
+
+    .stepper {
+      display: block;
+      margin-bottom: 30px;
+
+      .text {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 500;
+      }
+
+      .step {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+        &::before {
+          position: relative;
+          top: auto;
+          bottom: auto;
+          left: auto;
+          transform: none;
+        }
+      }
+
+      .number {
+        position: absolute;
+        top: 50px;
+        margin-right: 0;
+      }
+    }
+
+    .subtext {
+      max-width: 80%;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (max-width: $mobileL) {
+    padding-top: 33px;
+    padding-bottom: 32px;
+
+    .subtext {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.ourLatestWrapper {
+  justify-content: center;
+  display: flex;
+  margin-left: 48px;
+  margin-right: 48px;
+  justify-content: center;
+  border-radius: 48px;
+  background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  .ourLatestContainer {
+    min-height: 447px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 80px;
+    h2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 66px;
+      letter-spacing: 0.87px;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    p {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.87px;
+      color: #ffffff;
+      margin-bottom: 48px;
+    }
+    .imgSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 48px;
+      column-gap: 32px;
+      .imgSection_Item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+          border-radius: 40px;
+
+          width: 318px;
+          height: 170px;
+        }
+        cursor: pointer;
+        p {
+          max-width: 318px;
+          height: 45px;
+          margin-top: 12px;
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          letter-spacing: 0.87px;
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+    }
+    .ourLatestBtn {
+      color: #000756;
+    }
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .ourLatestWrapper {
+    .ourLatestContainer {
+      .imgSection {
+        .imgSection_Item {
+          img {
+            width: 254px;
+            height: 136px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .ourLatestWrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 40px;
+    border-radius: 16px;
+    .ourLatestContainer {
+      width: 100%;
+      padding: 24px;
+
+      h2 {
+        width: 100%;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.87px;
+      }
+      p {
+        width: 100%;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.87px;
+      }
+      .imgSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .carousel_arrows {
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          span {
+            margin: 30px;
+          }
+        }
+      }
+    }
+  }
+}

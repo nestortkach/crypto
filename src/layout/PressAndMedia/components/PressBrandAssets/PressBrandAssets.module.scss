@@ -1,0 +1,263 @@
+.brandWrapper {
+  justify-content: center;
+  display: flex;
+  margin-left: 48px;
+  margin-right: 48px;
+  justify-content: center;
+  border-radius: 48px;
+  .brandContainer {
+    min-height: 447px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 80px;
+
+    h2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 66px;
+      letter-spacing: 0.87px;
+      color: #01268a;
+      margin-bottom: 12px;
+    }
+    p {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.87px;
+      color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 48px;
+    }
+    h3 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+    }
+    .logotypesSubHeader {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 24px;
+    }
+    .logoContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 32px;
+      row-gap: 32px;
+      margin-bottom: 48px;
+      .white {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        max-width: 318px;
+        height: 184px;
+        background: #f3f9ff;
+        border-radius: 32px;
+        position: relative;
+        .downloadArrow {
+          position: absolute;
+          top: 23px;
+          right: 24px;
+        }
+      }
+      .blue {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        max-width: 318px;
+        height: 184px;
+        background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+        border-radius: 32px;
+        position: relative;
+        .downloadArrow {
+          position: absolute;
+          top: 23px;
+          right: 24px;
+        }
+      }
+    }
+    .screenshotsContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 32px;
+      .screenshotsItem {
+        position: relative;
+        width: 230px;
+        height: 184px;
+        .screenImg {
+          max-width: 230px;
+          max-height: 189px;
+        }
+        .roundedAroow {
+          position: absolute;
+          top: 23px;
+          right: 24px;
+        }
+      }
+    }
+    .colorFonts {
+      display: flex;
+      justify-content: center;
+      margin-top: 48px;
+      .colorsContainer {
+        flex: 1;
+
+        .colors {
+          display: flex;
+
+          flex-wrap: wrap;
+          row-gap: 12px;
+          column-gap: 12px;
+          .colorsItem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 100px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 32px;
+          }
+          .colorsItem:nth-child(4) {
+            p {
+              color: #0042b8;
+            }
+          }
+        }
+      }
+      .fontsContainer {
+        flex: 1;
+        padding-left: 48px;
+        .fontsItems {
+          p {
+            width: 100%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-size: 48px;
+            line-height: 58px;
+            background: linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+          }
+          p:nth-child(1) {
+            font-weight: 300;
+          }
+          p:nth-child(2) {
+            font-weight: 500;
+          }
+          p:nth-child(3) {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1025px) {
+  .brandWrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 40px;
+    .brandContainer {
+      width: 100%;
+      padding: 0px;
+      h2 {
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.87px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.87px;
+        margin-bottom: 34px;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.87px;
+      }
+      .logotypesSubHeader {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.87px;
+      }
+      .logoContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .white {
+          width: 318px;
+          height: 184px;
+
+          border-radius: 32px;
+        }
+        .blue {
+          width: 318px;
+          height: 184px;
+          border-radius: 32px;
+        }
+      }
+      .screenshotsContainer {
+        display: flex;
+        justify-content: space-around;
+        row-gap: 12px;
+        .screenshotsItem {
+          width: 150px;
+          height: 109px;
+          .screenImg {
+            width: 155px;
+            height: 100px;
+          }
+        }
+      }
+      .colorFonts {
+        flex-direction: column;
+        .colorsContainer {
+          .colors {
+            .colorsItem {
+              width: 106px;
+              height: 98px;
+            }
+          }
+        }
+        .fontsContainer {
+          padding-left: 0;
+          margin-top: 34px;
+          .fontsItems {
+            p {
+              font-size: 35px;
+              line-height: 44px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@import 'styles/variables';
+
+.component {
+  height: auto;
+  padding: 64px 0 195px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+
+  @media (max-width: $laptop) {
+    gap: 10px;
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    padding: 2rem 0 16rem;
+    gap: 30px;
+  }
+
+  h1 {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    @media (max-width: $tablet) {
+      font-size: 32px;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      color: white;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.2;
+      letter-spacing: 0.87px;
+
+      @media (max-width: $tablet) {
+        font-size: 16px;
+      }
+
+      &::before {
+        content: '•';
+        font-size: 24px;
+        font-weight: 400;
+        margin-right: 18px;
+
+        @media (max-width: $tablet) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.formWrapper {
+  max-width: 1440px;
+  margin: 0 48px;
+  background: url('/home-coins.webp'), linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+  background-position: 100% 0%;
+  width: 100%;
+  margin-left: 48px;
+  margin-right: 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 48px;
+  position: relative;
+
+  @media screen and (max-width: $laptop) {
+    margin: 0 24px;
+  }
+
+  @media (max-width: $tablet) {
+    background: url('/home-coins-mobile.webp'), linear-gradient(252.44deg, #000756 0%, #0042b8 100%);
+    background-position: 100% 180%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin: 0 16px;
+    border-radius: 24px;
+  }
+
+  @media (max-width: $mobileL) {
+    background-position: 100% 130%;
+  }
+}
+
+.button {
+  background-color: #fff;
+  border-radius: 16px;
+  max-width: 100%;
+  padding: 1rem 0;
+  display: grid;
+  place-items: center;
+  color: #0042b8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.actionArea {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  // padding: 0rem 2rem;
+}
+
+.paymentList {
+  img {
+    width: 40px;
+    height: 40px;
+
+    @media (max-width: $tablet) {
+      width: 35px;
+      height: 35 px;
+    }
+  }
+  display: flex;
+  gap: 24px;
+  height: 44px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+
+  @media (max-width: $tablet) {
+    height: 32px;
+    width: 100%;
+    gap: 1px;
+    justify-content: space-between;
+  }
+  .googlePay {
+    @media (max-width: $laptop) {
+      width: 45px;
+      object-fit: fill;
+      height: 25px;
+    }
+  }
+}
+
+.calculatorArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+
+  @media (max-width: $tablet) {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .component {
+    h1 {
+      font-size: clamp(1.5rem, 8vw, 3rem);
+    }
+  }
+}

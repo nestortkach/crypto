@@ -1,0 +1,66 @@
+@import 'styles/variables';
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 52px;
+  overflow: hidden;
+
+  .content {
+    position: relative;
+    width: 51%;
+    padding-top: 45px;
+    min-height: 290px;
+  }
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .imgWrap {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translate(100%, -50%);
+    display: block;
+    width: 95%;
+    z-index: 1;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    .content {
+      width: 100%;
+    }
+    .title {
+      position: relative;
+      margin-bottom: 70px;
+      z-index: 2;
+    }
+    .imgWrap {
+      position: relative;
+      top: auto;
+      right: auto;
+      margin-bottom: 30px;
+      transform: none;
+      max-width: none;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      z-index: 1;
+    }
+  }
+
+  @media screen and (max-width: $mobileL) {
+    .content {
+      padding-top: 0;
+    }
+  }
+}

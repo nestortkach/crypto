@@ -1,0 +1,23 @@
+.button {
+  color: white;
+  background: #04c697;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0, 57, 166, 0.08);
+  padding: 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  width: 100%;
+  @media screen and (max-width: 424px) {
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+}
+
+.disabled {
+  opacity: 0.3;
+}

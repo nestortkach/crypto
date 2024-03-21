@@ -1,0 +1,70 @@
+@import 'styles/variables';
+
+.featuresSection {
+  padding-top: 90px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width: $tablet) {
+    padding: 48px 0;
+  }
+}
+
+.heading {
+  text-align: center;
+}
+
+.features {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: $laptop) {
+    justify-content: space-between;
+  }
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
+
+  .leftFeatures,
+  .rightFeatures {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: $tablet) {
+      flex: 1;
+    }
+  }
+}
+
+.buttonContainer {
+  @media screen and (max-width: $tablet) {
+    margin: 24px 0;
+  }
+
+  justify-content: center;
+  display: flex;
+
+  .button {
+    font-size: 18px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-align: center;
+    background-color: #0bbc81;
+    width: 100%;
+    max-width: 242px;
+  }
+}
+
+.mobile {
+  width: 320px;
+  height: auto;
+  margin: 0 16px;
+  @media screen and (max-width: $laptop) {
+    display: none;
+  }
+}

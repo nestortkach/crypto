@@ -1,0 +1,113 @@
+@import 'styles/variables';
+
+.component {
+  padding: 75px 0 90px;
+  overflow: hidden;
+
+  .title {
+    margin-bottom: 32px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+  }
+
+  .textPart {
+    order: 1;
+    width: 50%;
+    padding-right: 40px;
+  }
+
+  .imgWrap {
+    width: 50%;
+    order: 2;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .listTitle {
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .contentWithChecklist {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 48px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('/list-checkmark.svg') center no-repeat;
+        z-index: 1;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+    padding: 32px 0 64px;
+
+    .title {
+      margin-bottom: 24px;
+    }
+
+    .content {
+      flex-direction: column;
+    }
+
+    .textPart {
+      width: 100%;
+      padding: 0;
+    }
+
+    .imgWrap {
+      order: 1;
+      width: 100%;
+      max-width: 295px;
+    }
+
+    .listTitle {
+      margin-bottom: 12px;
+    }
+
+    .contentWithChecklist {
+      li {
+        max-width: 320px;
+        width: 100%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        &::before {
+          position: relative;
+          width: 48px;
+          height: 48px;
+          margin: 0 auto 16px;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+}

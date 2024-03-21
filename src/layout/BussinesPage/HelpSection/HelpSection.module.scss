@@ -1,0 +1,91 @@
+@import 'styles/variables';
+
+.section {
+  padding: 52px 0 72px;
+
+  .title {
+    margin-bottom: 75px;
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    margin-bottom: 75px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  .cardIcon {
+    position: relative;
+    width: 95px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 16px;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardTitle {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn {
+    min-width: 311px;
+  }
+
+  @media screen and (max-width: $laptop) {
+    .card {
+      display: block;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .cardIcon {
+      margin: 0 auto 16px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 32px 0 75px;
+
+    .title {
+      margin-bottom: 50px;
+    }
+
+    .cards {
+      display: block;
+      margin-bottom: 45px;
+    }
+
+    .card {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
